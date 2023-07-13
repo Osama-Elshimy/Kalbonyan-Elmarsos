@@ -1,0 +1,13 @@
+{
+	"name": "17-modern-js-modules-tooling",
+	"version": "1.0.0",
+	"description": "",
+	"main": "script.js",
+	"scripts": {},
+	"author": "Osama Elshimy",
+	"license": "ISC",
+	"dependencies": {
+		"leaflet": "^1.6.0",
+		"lodash-es": "^4.17.15"
+	}
+}
