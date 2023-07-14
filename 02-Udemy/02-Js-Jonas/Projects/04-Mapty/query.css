@@ -1,0 +1,12 @@
+@media (max-width: 991px) {
+  body {
+    display: block;
+    background-color: #2d3439;
+    padding-bottom: 100px;
+    /* height: auto; */
+  }
+  .sidebar {
+    padding: 1rem;
+    margin-bottom: 50px;
+  }
+}
