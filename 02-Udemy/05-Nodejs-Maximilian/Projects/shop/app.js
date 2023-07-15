@@ -63,8 +63,10 @@ const fileFilter = (req, file, cb) => {
 //////////////////////////////////////////////
 
 // HTML engine PUG
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 app.set('views', 'views');
+app.use(express.static(__dirname + './views'));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(
