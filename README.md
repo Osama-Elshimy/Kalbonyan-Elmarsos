@@ -58,7 +58,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 <img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20This%20Courses-84h37m-green">
 
-# LEARN (MERN = MongoDB, Express.js, React.js, NodeJS)
+# LEARN MERN (MongoDB, Express.js, React.js, NodeJS)
 
 ![0%](https://progress-bar.dev/100/?title=Done)
 <span id="mern"></span>
