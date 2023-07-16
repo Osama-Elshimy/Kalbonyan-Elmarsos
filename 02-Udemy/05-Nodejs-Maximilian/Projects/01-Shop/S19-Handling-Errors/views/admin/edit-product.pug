@@ -1,0 +1,28 @@
+extends ../layouts/main-layout.pug
+
+block styles
+    link(rel="stylesheet", href="/css/forms.css")
+    link(rel="stylesheet", href="/css/product.css")
+
+block content
+    main
+        if errorMessage
+            h4.user-message.user-message--error #{errorMessage}
+            
+        form.product-form(action="/admin/edit-product", method="POST")
+            div.form-control
+                label(for="title") Title
+                input(class=(validationErrors.find(e => e.path === "title") ? "invalid" : ''),  type="text", name="title", value=product.title)#title
+            div.form-control
+                label(for="imageUrl") Image URL
+                input(class=(validationErrors.find(e => e.path === "imageUrl") ? "invalid" : ''),  type="text", name="imageUrl", value=product.imageUrl)#imageUrl
+            div.form-control
+                label(for="price") Price
+                input(class=(validationErrors.find(e => e.path === "price") ? "invalid" : ''),  type="number", name="price", step="0.01", value=product.price)#price
+            div.form-control
+                label(for="description") Description
+                textarea(class=(validationErrors.find(e => e.path === "description") ? "invalid" : ''),  rows="5", name="description")#description #{value=product.description}
+            
+            input(type="hidden", name="_csrf", value=csrfToken)
+            input(type='hidden', value=product._id, name='productId')
+            button.btn(type="submit") Update Product
