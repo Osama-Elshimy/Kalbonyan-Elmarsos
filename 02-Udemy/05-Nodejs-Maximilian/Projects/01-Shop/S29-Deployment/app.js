@@ -1,3 +1,6 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
 // Core node modules
 const path = require('path');
 
@@ -23,8 +26,8 @@ const errorController = require('./controllers/error');
 
 //////////////////////////////////////////////
 
-const MONGODB_URI =
-	'mongodb+srv://Osama-node-course:Jz7gWc9F0bji85E7@node-course-cluster.g9qzhvu.mongodb.net/shop?retryWrites=true&w=majority';
+const MONGODB_URI = process.env.MONGODB_URI;
+console.log(MONGODB_URI);
 
 const app = express();
 const store = new MongoDBStore({
