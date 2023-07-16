@@ -27,7 +27,6 @@ const errorController = require('./controllers/error');
 //////////////////////////////////////////////
 
 const MONGODB_URI = process.env.MONGODB_URI;
-console.log(MONGODB_URI);
 
 const app = express();
 const store = new MongoDBStore({
