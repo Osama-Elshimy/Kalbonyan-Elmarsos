@@ -116,6 +116,6 @@ main().catch(err => console.log(err));
 async function main() {
 	await mongoose.connect(process.env.MONGODB_URI);
 
+	app.listen(process.env.PORT || 8080);
 	console.log('Listening on port 8080');
-	app.listen(8080);
 }
