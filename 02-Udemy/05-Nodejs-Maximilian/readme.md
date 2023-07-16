@@ -28,11 +28,11 @@
 
 #### Project Code
 
-- [S25- Rest API](./Projects/02-Social-Feed/S25-%20Rest%20API/)
-- [S27- Web Socket](./Projects/02-Social-Feed/S27-%20Web%20Socket/)
-- [S28- Graphql](./Projects/02-Social-Feed/S28%20-%20Graphql/)
+- [S25- Rest API](./Projects/02-Social-Feed/S25-Rest-API/)
+- [S27- Web Socket](./Projects/02-Social-Feed/S27-Web-Socket/)
+- [S28- Graphql](./Projects/02-Social-Feed/S28-Graphql/)
 
-#### [Finished Live Demo]()
+#### [Finished Live Demo](https://social-feed-3zdv.onrender.com/)
 
 ---
 
@@ -45,5 +45,5 @@
 
 [Course-Link](https://www.udemy.com/course/nodejs-the-complete-guide/)<br>
 
-![Certificate](https://via.placeholder.com/468x300?text=Certificate+Here)
+![Certificate](./node-js-complete-guide.jpg)
 <br>
