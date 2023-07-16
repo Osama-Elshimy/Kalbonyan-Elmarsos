@@ -1,0 +1,11 @@
+extends layout.pug 
+
+block style
+  link(rel="stylesheet", href="/css/form.css")
+
+block content 
+  main
+    form.users-form(action="/", method="POST")
+      .form-control
+        input(type="text", name="username", placeholder="Name..." required)#title
+      button.btn(type="submit") Add User

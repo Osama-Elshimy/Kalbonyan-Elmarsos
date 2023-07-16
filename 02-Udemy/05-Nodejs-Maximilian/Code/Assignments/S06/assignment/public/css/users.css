@@ -1,0 +1,16 @@
+.users-list {
+	background-color: #0c1e30;
+	color: white;
+	padding: 1rem;
+	border-radius: 8px;
+	list-style-type: none;
+}
+
+.users-list li {
+	margin-bottom: 1rem;
+	margin-left: 3rem;
+}
+
+.users-list p {
+	font-size: 1.2rem;
+}

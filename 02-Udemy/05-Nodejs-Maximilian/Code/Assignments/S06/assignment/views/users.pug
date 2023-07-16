@@ -1,0 +1,15 @@
+extends layout.pug
+
+block style
+  link(rel="stylesheet", href="/css/users.css")
+
+block content 
+  main 
+    if hasUsers
+      ul.users-list 
+        each user in usersList
+          li
+            p #{user.name}
+
+    else 
+      h1 No users yet.

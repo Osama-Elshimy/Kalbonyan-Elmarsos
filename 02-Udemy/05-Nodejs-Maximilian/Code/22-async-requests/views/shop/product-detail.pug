@@ -1,0 +1,19 @@
+extends ../layouts/main-layout.pug
+
+block styles
+  link(rel="stylesheet", href="/css/product.css")
+
+block content
+  main.centered
+      h1 #{product.title}
+      hr
+      div.image
+        img(src=`/${product.imageUrl}`, alt=`${product.title}`)
+      h2 $#{product.price} 
+      p #{product.description}
+
+      if isAuthenticated
+        form(action='/cart', method='post')
+          input(type="hidden", name="_csrf", value=csrfToken)
+          input(type='hidden', name='productId', value=product.id)
+          button.btn(type='submit') Add to Cart
