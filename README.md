@@ -7,7 +7,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 ### The Aim of this internship
 
-- <a href="#Fundamentals">Learn Programing Fundamentals ,HTMl and CSS </a>
+- <a href="#Fundamentals">Learn Programing Fundamentals ,HTML and CSS </a>
 - <a href="#js">LEARN JAVASCRIPT</a>
 - <a href="#MERN">Learn MERN Stack</a>
 - <a href="#AWS">LEARN ABOUT CLOUD PROVIDER and SERVERLESS</a>
@@ -70,11 +70,11 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 - ## NodeJs
 
-- [x] `40h 31m` - 02 - [NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)](02-Udemy/-05-Nodejs-Maximilian/)
+- [x] `40h 31m` - 02 - [NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)](02-Udemy/05-Nodejs-Maximilian/)
 
 - ## MERN
 
-- [x] `20h 32m` - 03 - [MERN Stack Course 2022 - MongoDB, Express, React and NodeJS](02-Udemy/-06-MERN-Jobify/)
+- [x] `20h 32m` - 03 - [MERN Stack Course 2022 - MongoDB, Express, React and NodeJS](02-Udemy/06-MERN-Jobify/)
       <br />
 
 <img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20This%20Courses-109h1m-green">
