@@ -7,10 +7,10 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 ### The Aim of this internship
 
-- <a href="#Fundamentals">Learn Programing Fundamentals ,HTML and CSS </a>
+- <a href="#fundamentals">Learn Programing Fundamentals ,HTML and CSS </a>
 - <a href="#js">LEARN JAVASCRIPT</a>
-- <a href="#MERN">Learn MERN Stack</a>
-- <a href="#AWS">LEARN ABOUT CLOUD PROVIDER and SERVERLESS</a>
+- <a href="#mern">Learn MERN Stack</a>
+- <a href="#aws">LEARN ABOUT CLOUD PROVIDER and SERVERLESS</a>
 
 <img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20All%20Courses-%2B200h-green">
 <br>
@@ -21,9 +21,9 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 <!-- Fundamentals -->
 
-<span id="Fundamentals"></span>
+<span id="fundamentals"></span>
 
-# Learn Programing Fundamentals ,HTMl and CSS
+# Learn Programming Fundamentals, HTML and CSS
 
 ![](https://progress-bar.dev/100/?title=Done)
 <br />
@@ -52,16 +52,16 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 ![0%](https://progress-bar.dev/100/?title=Done)
 
-- [x] `68h 30m` - 01 - [ The Complete JavaScript Course 2023: From Zero to Expert!) ](02-Udemy/02-Js-Jonas/)
+- [x] `68h 30m` - 01 - [The Complete JavaScript Course 2023: From Zero to Expert!](02-Udemy/02-Js-Jonas/)
 - [x] ` in progress` `16h 7m` - 02 - [20 Web Projects with vanilla JavaScript](02-Udemy/03-Vanilla-Web-Projects/)
       <br />
 
 <img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20This%20Courses-84h37m-green">
 
-# LEARN JAVASCRIPT (MERN = MongoDB, Express.js, React.js, NodeJS)
+# LEARN MERN (MongoDB, Express.js, React.js, NodeJS)
 
 ![0%](https://progress-bar.dev/100/?title=Done)
-<span id="MERN"></span>
+<span id="mern"></span>
 <br />
 
 - ## ReactJs
@@ -83,7 +83,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 <!-- AWS -->
 
-<span id="AWS"></span>
+<span id="aws"></span>
 
 # LEARN ABOUT CLOUD PROVIDER and SERVERLESS
 
