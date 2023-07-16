@@ -1,0 +1,25 @@
+{
+	"name": "backend-api",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"install-dependencies": "npm run install-client && npm install",
+		"setup-production": "npm run install-client && npm run build-client && npm install",
+		"install-client": "cd client && npm install",
+		"build-client": "cd client && npm run build",
+		"server": "nodemon server --ignore client",
+		"client": "npm start --prefix client",
+		"start": "concurrently --kill-others-on-fail \" npm run server\" \" npm run client\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.20.0",
+		"express": "^4.18.1",
+		"jsonwebtoken": "^8.5.1",
+		"uuid": "^9.0.0"
+	}
+}
