@@ -21,6 +21,11 @@ app.use('/events', eventRoutes);
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
+// Catch-all route for client-side routing
+app.get('*', (req, res) => {
+	res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
 app.use((error, req, res, next) => {
 	const status = error.status || 500;
 	const message = error.message || 'Something went wrong.';
