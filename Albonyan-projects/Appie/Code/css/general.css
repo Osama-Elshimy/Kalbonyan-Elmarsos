@@ -1,0 +1,173 @@
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+:root {
+	--color-body: #fefffe;
+
+	/* Header and Hero and app download and footer*/
+	--color-gery-dark: #eff0f6;
+
+	/* how grey */
+	--color-grey: #f1f1f6;
+
+	/* WhereEver and headers-font */
+	--color-blue: #0e1032;
+
+	/* text */
+	--color-font-light: #79797e;
+
+	/* button */
+	--color-pink: #ff3f67;
+	--color-pink-light: #fec4d0;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1;
+	font-weight: 300;
+	background-color: var(--color-body);
+	overflow-x: hidden;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+	max-width: 130rem;
+	padding: 0 3.2rem;
+	margin: 0 auto;
+}
+
+.grid {
+	display: grid;
+	column-gap: 3.2rem;
+	row-gap: 3.2rem;
+}
+
+/* .grid:not(:last-child) {
+	margin-bottom: 9.6rem;
+} */
+
+.grid--2-cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+	align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+	color: var(--color-blue);
+}
+
+.heading-primary {
+	font-weight: 400;
+	font-size: 6.2rem;
+	line-height: 1.05;
+	margin-bottom: 2.4rem;
+}
+
+.heading-secondary {
+	font-size: 4.4rem;
+	font-weight: 600;
+	line-height: 1.2;
+	/* margin-bottom: 9.6rem; */
+	margin-bottom: 1.2rem;
+}
+
+.heading-tertiary {
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1.2;
+	/* margin-bottom: 3.2rem; */
+}
+
+.subheading {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: var(--color-font-light);
+	/* text-transform: uppercase; */
+	margin-bottom: 1.6rem;
+	letter-spacing: 0.75px;
+	line-height: 1.5;
+}
+
+/*  */
+.btn {
+	font-weight: 500;
+	font-size: 1.4rem;
+
+	transition: all 0.4s;
+	cursor: pointer;
+	border: none;
+}
+
+.icon {
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: 100%;
+
+	/* padding: 1rem; */
+}
+
+a {
+	text-decoration: none;
+}
+
+.testimonial-img--mobile {
+	display: none;
+}
+
+/* HELPER/SETTINGS CLASSES */
+.margin-right-sm {
+	margin-right: 1.6rem !important;
+}
+
+.margin-right-md {
+	margin-right: 2.4rem !important;
+}
+
+.margin-left-md {
+	margin-left: 4.8rem !important;
+}
+
+.margin-bottom-md {
+	margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.center-text-v {
+	vertical-align: center;
+}

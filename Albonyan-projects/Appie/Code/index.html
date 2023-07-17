@@ -1,0 +1,2228 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" href="imgs/logo.png" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet" />
+
+		<link rel="stylesheet" href="css/general.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/queries.css" />
+
+		<script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
+		<title>Appie</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="nav-container">
+				<a href="#">
+					<img src="imgs/logo.png" alt="Appie logo" class="logo" />
+				</a>
+
+				<!-- 
+					The Checkbox and the nav must be siblings
+				-->
+				<input class="side-menu" type="checkbox" id="side-menu" />
+				<label class="hamb" for="side-menu"
+					><span class="hamb-line"></span
+				></label>
+
+				<nav class="main-nav">
+					<ul class="main-nav-list">
+						<li>
+							<a href="#hero" class="main-nav-link"
+								>Home
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="w-6 h-6">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+								</svg>
+							</a>
+						</li>
+						<li><a href="#features" class="main-nav-link">Service</a></li>
+						<li>
+							<a href="#pricing" class="main-nav-link"
+								>Pages
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="w-6 h-6">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#platforms" class="main-nav-link"
+								>News
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="w-6 h-6">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+								</svg>
+							</a>
+						</li>
+						<li><a href="#footer" class="main-nav-link">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<a href="#" class="main-nav-link nav-cta">Get Started</a>
+		</header>
+
+		<main>
+			<!-- Hero Section -->
+			<section id="hero" class="section-hero">
+				<div class="hero">
+					<div class="hero-text-box">
+						<h1 class="heading-primary">
+							Ready to launch your app in one, <strong>Application</strong>
+						</h1>
+						<p class="hero-description">
+							Find the best application in the appie.
+						</p>
+						<form action="#" class="hero-form">
+							<div class="form-input">
+								<svg
+									class="icon--form-input"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+								</svg>
+								<input type="email" required placeholder="info@appie.com" />
+							</div>
+							<button type="submit" class="btn btn--form" href="#">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="icon form-icon">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+								</svg>
+							</button>
+						</form>
+
+						<div class="user">
+							<div class="user-imgs">
+								<img src="imgs/people/customer-1.jpg" alt="Customer photo" />
+								<img src="imgs/people/customer-2.jpg" alt="Customer photo" />
+								<img src="imgs/people/customer-3.jpg" alt="Customer photo" />
+								<img src="imgs/people/customer-4.jpg" alt="Customer photo" />
+							</div>
+							<p class="user-text"><span>30k</span>Feedback</p>
+						</div>
+					</div>
+					<div class="hero-img-box">
+						<img
+							src="imgs/hero.png"
+							alt="A human hand holding a phone with the appie app opened on it"
+							class="hero-img" />
+					</div>
+				</div>
+			</section>
+
+			<!-- Features Section (NO FINISHED) -->
+			<section id="features" class="section-features">
+				<div class="container">
+					<header class="feature-header">
+						<div class="feature-text-box">
+							<h2 class="heading-secondary">How does it work</h2>
+							<p class="subheading">
+								The full monty spiffing good time no biggie cack grub fantastic.
+							</p>
+						</div>
+						<a href="#" type="button" class="btn feature--btn">
+							View all Features
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+							</svg>
+						</a>
+					</header>
+					<div class="features-container grid grid--3-cols">
+						<div class="feature">
+							<div>
+								<img
+									class="icon icon--bolt"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBklEQVR4nO2bS0vDQBDH85FWLIj4OhTEQw/iQRDEmzfBq1DED6B4FUH8Am5rq5Wq9UFBEWvFB7QKooIvaCuFSrHW3WQkFtQ2aaqHbJp1BuYWQn47j//sJlEIZfCfXHH6ARCYYoQBU5piDQM2LYpdGlCWSBPoJMoSRVkClCWKsgQoSxRlidkmCR0hBomsBvdFcz951qB7RSJZ8ic4NLLBGJcHeOlatYTVo9wi0+BxVdAsgefTqhBYIgK4K8xAteaF/g0uD/DYnnX9pvKaMFgiAnjhwrp+p09VuYCT2fr5rKd67xqTB9gTZFCyyOiDjNh0JnYDD+9Y1+/kEZcLeOasfv2WOUBnmMkFHHvQLNPZF+UG90ZcDJwrwZ9NX6Lxfe4+YF+08fxcz0bjLgT2/2LDYGbHOXs7t2LXjfW0bDBRGky/fmSXu7eGvZFKatf6+p35Umw/anK+H06YTF/61DWwyeUEzrwaoxu4ETNTK6Jh20PMUNtvHKBP0EytiAYe2jJ278VLiQ4ASI1PHFYDF8oAPYIO8IgTwHOp6vl69lyy/TCp8egPSdKbV9sykxs4nf8GnkqKjS5xArj4XoG9fdGgNcDkBvausq/o2rkjahpgT5BB/En7PJh3Apbgp4fUmVXHCFNMacAapti0ALs0RVkC/AWANIFWoixRlCVAWaIoS4CyRP+hLH0AIhbK+7Y6EJAAAAAASUVORK5CYII=" />
+							</div>
+							<h3 class="heading-tertiary">Fast and intuitive</h3>
+							<p class="subheading">
+								Oxford posh bevvy give us a bell gutted mate spend a penny
+								quaint cockup plastered.
+							</p>
+							<a href="#" class="btn btn--feature">
+								Read More
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="icon icon-more">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+								</svg>
+							</a>
+						</div>
+
+						<div class="feature">
+							<div>
+								<img
+									class="icon icon--home"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEmUlEQVR4nO1abW8UVRjlPz4F8YVqon5AJX5AogkS+MCXpZQCaRUpBkShoB+IKGAgMY2iMVgqEbUaKCrI2+z7bruzs2/H3Nuwu7ezW7p19ZG950meZHbmzp2759zznJm5sy6QBJgJNQzWEfyE6gQkAUICoA0CFSD6QLAEiZ9JDxASAG0QqADRB4IlSPxMeoCQAGiDQAWIPhAsQeJn0gOEBEAbBCpA9IFgCRI/kx4gJADaIFABog8ES5D4mfQAIQHQBoEKEH0gWILEz6QHCAnAmkBYvwfp14/YNNvaQHqlgMybx1G7k8KjqN5O2n3a4/KCgPzop2hEVSyPRqWGwsHP1cc3uAQMJbDw4TTQiGHfxgKweOY7BENPTkl6IghIPrMP5W9/jeFd+ux7m8vDtDXnaI97IAhIvTyB6vwDF+FqDYXxc802Ztvsc5rM37fnOv0NJRBOXwfqSzJqhBHyY2dJQNAFfGOs9XTRAbaeX0R2+4lY2+zbJ+wxp2266Jhz+rXDMbUYA6cCJA5+fl/cbKt/JpHefKgF6JZJm83fmw9ZQB1biKrWuC2hW4/GCKg9zJGAoKPZum4b/XALyU373RlfKKGxECK361TLL54dQ3TlRkdzzrxxjASsaLZPj6J8eS4GUunsFedhq3j4IlCrt03jut3X7Gv9no7mXL1xjwR0NduXJuIAGWAnLznAmpncLcKL1xBsGGmZ8zsXYubMEtTJbLceRT2Zd6tGMUR251RLHc+NIZq5icdFdO13JIfbStX2j1DPuebscOy7B+RHzqBRrrig3Mu45vrqe86rh8dF7PxXup/vLwHGbKe+ij3ZRrPLzHbnlDXbXsOc4yho035r5LF2qYIdi1cEJDfuRTj9U19q+IqxSg8pfzNnbwC8ICD1wkFUfrkTB+rI6s2214gR++4X7l0UgMpvd5F6cXywCUhuHEXtfiZutrtOuWY7O49+h+nT9P3oOubZwVx7uXeYMQ4sAZltH7h/+G7avh5YjVn2I0zf5hrN622ZtGNoj8y2Y4NLgCkDlZ9vL83ImZtIDh9oHsvuOLkms12TOe842VLc8IGm4qIf/0Dw1N4BJqD5p1t3OYGpyRPn/5nZ9hrmberEeXdMz7cmw8AT0MyhBBZPX4ZWlM7NqK8nqxJQ7vDe578OMwZvCag9zGnj7/GTMAkACQAVgJ6jAfsOKfvWcftcYdJsL0x9vfIXEyxB/SlB0eytriXNvIomAf+yB4RfXu/anzlGAkgABvouKKQCSEDg83NASAWQgIAKSPAuqB+zoDL3l3oJMsuj3npA8f1LPQNWunC1a3/mWK/hfFHnGwHBhhFEV3tb/83t/rhrf7ndn/TUl1mVa1+s948AWSLBfDpiSkHtQbZrms8WC+PuKlanNCtdpu1KfZlr2ZmvDP7/gwDxO0mAkABog0AFiD4QLEHiZ9IDhARAGwQqQPSBYAkSP5MeICQA2iBQAaIPBEuQ+Jn0ACEB0AaBChB9IFiCxM+kBwgJgDYIVIDoA8ESJH4mPUBIALRBoAJEHwiWIPEz6QFCAqANAhUg+kCwBImfSQ8QEgBtEDQV8Dfx//kD6v3jIAAAAABJRU5ErkJggg==" />
+							</div>
+							<h3 class="heading-tertiary">Fast and intuitive</h3>
+							<p class="subheading">
+								Oxford posh bevvy give us a bell gutted mate spend a penny
+								quaint cockup plastered.
+							</p>
+							<a href="#" class="btn btn--feature">
+								Read More
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="icon icon-more">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+								</svg>
+							</a>
+						</div>
+
+						<div class="feature">
+							<div>
+								<img
+									class="icon icon--link"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAElklEQVR4nO2b3W8UZRTG989aV00KiYnxI/4NcCNGTZRETim0IUgDMakXYOoHaZNC1Qs1gkBp+Ej8gIAaES+U0osCupKUlguIYjsz+x7zjDZZZmd2ZrZNz+zMc5KTbLadbfN73nPO+57zbq0untI9MwY1wvdMFyAFEAqg1hAYAWIPgilIqumsAUIB1BoCI0DsQTAFSTWdNUAogFpDYASIPQimIKmmswYIBVBrCIwAsQfBFCTVdNYAoQBqDYERIPYgmIKkms4aIBRArSEwAsQeBFOQVNNZA4QCqDUERoBsLISnhjwd/iTQc9db2lx2+o+noeM13sPP8DvW8EuZgoamA23ed5pm+J3dxwPz/7c0AjR2ezr9TUvzGp7BsxRA1gd/5qf88NtFoABiA3/NBo3SUa3M8C/dcPrGhK/Pve2FjteX5+LrAwq0RWGulRG+c6qHTyev6PHZIPa5vR9vfhTUygh/7GQ6yO9+63z+7LXNrwV9KcCpH5Phv/tVtlX86kd+x/N3lhwFqKeAe2LQ0+WH64MP3zLsdXzGo1WlAPUM8J4e8vSZfZ6+dNDXXVOBHj0f6Min+fL31pFOAf5eoQCaBu7FUV93fODr60d93XbE14G9vaWx15iCssN6dr+nkxf/6+tEreVUf15weuCzQJ/McaLFFjVqKOybXc8KX4Tf+TLQv1Y0ky0sujAq0j7zyJn4begebkO9x7aaJ3/If8JF1/OtqeR6gC0qCnbUfl/iQUw3qr2w6mtsJCTBx3u7jrEVoVngBy3VG00XthTu3EtuO99afHxFJ8GHHf+azTjNuvIBv31VY6XP/xlPFoU5DT7+HtvRkj3tXL3ZeVrFVnT+bifh67dcoeEXZhfUyJHzk9oF29/rbC0AfJHhF0KARkpjLQ5g0lYTO5ksVhT45gI0MnQ1f7ndCRXpJu4EfHXe9RV8UwGytpRHP48/NKHwRiNhrun6Cr6pAEkDdBfp56PxdrvLdhM14cpNF8LHFrWf4JsJgKsjWeDX2wosDle9WlHhmwiAFR13b8elTLLQXkCbIa+d+L648E0EwK20ODvcZYa75sj5aLhlMTTwDn1hf/GqcALgamDUvv01eysALWeccNGCRis6aoiuiQutsIVtDbeQAsT19F/5ML2FHOfYiiIqMJx5+X1fXxjt7XMqJQDmrlEbyDnVwvgRqxzjSIwlMZ5EbbGG2bcCbBnO/nxSb2fpgQsH9tZAS52Cxro01nBVxRpmqYvwWMG7mn2/DR2fDbrOcMsI30QATKmSvkBxec7pm5O+Pn/AC33npB+2GZKs3+GbCADHN1PWazMlgG8mALyXb7OsGepInjtARXbTdvR0DyJggF6GlW8uQHs6asZsTaP2x7JTMbo6UmoB6v8XZtxKm73WCq+a4LAGx2vc2Uf7uihfKy2lAPUKOwUQCqDWEBgBYg+CKUiq6awBQgHUGgIjQOxBMAVJNZ01QCiAWkNgBIg9CKYgqaazBggFUGsIjACxB8EUJNV01gChAGoNgREg9iCYgqSazhogFECtITACxB4EU5BU01kDhAKoNQRGgNiDsEpB/wJVTcL6s3PJGgAAAABJRU5ErkJggg==" />
+							</div>
+							<h3 class="heading-tertiary">Fast and intuitive</h3>
+							<p class="subheading">
+								Oxford posh bevvy give us a bell gutted mate spend a penny
+								quaint cockup plastered.
+							</p>
+							<a href="#" class="btn btn--feature">
+								Read More
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="icon icon-more">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+								</svg>
+							</a>
+						</div>
+
+						<div class="feature">
+							<div>
+								<img
+									class="icon icon--bell"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAACzElEQVR4nO2avWsUURTF92/bymJBSATtFNIGId0phCWwok0ghWxIOotolUb8aIJJoaWfYCGxMKCFEgQx7kxmdufIW1DEVQjJmPNm3rlwmllm9t7zm3tvMa8zQpdWV+ZBx+Z3pS+gAcAAqDbBHQC9ER5BSFPeATAAqk1wB0BvhEcQ0pR3AAyAahPcAdAb4RGENOUdAAOg2gR3APRGeAQhTXkHwACoNsEdAL0RHkFIU94BMACqTXAHQG+ERxDSlHcADIBqE9wB0BvhEYQ05R0AA+BJTMhWrrB8ujVVtnJZ/iYn1QHZzUtk/p0/o8oOmd24KM8rGQDFvVv8M8I1dV7JACi3b88ACNfUebUeQL52leNXO2SRzwAI18Jv+XBRnmf7APR7HL98zGNFVXH8Ynt6jzzvNgDIrl9g9Xn/eOb/zuHTe2aDeXn+zQZw7RwnH/d40gj3hmfI62gqgHL3Lk8b5c4deR2NBJAN5sjy6NQAWBbTMaaup3EAikcbrCuKh+vyehoHYPLueW0AJnvP5PU0DkD17UttAKqvB/J6GgeA47I2AOFZ6nqaB6DmUNdjANCb7Q5AfPIIggHQOyBC1R3qejyCoDfbOwDxyUsYBsAZE/q9+ndApF/I4uuAfo+T/Te1A5h8eMts+by+vqgB9P+P+TFD6KRifqwQogFwtLnMs4rwX+p6owOQDxc5fr17Jorp7FA0AEaJqnEA8tWFf7/Zqwvy/FoPIBvM//1rWTj9MJiT59d6AKNwYuLB2vQI4q+oKhb3h/K8kgEwCqNoY4nlk62p8vUleT7JARi1RAYAA6DaBHcA9EZ4BCFNeQfAAKg2wR0AvREeQUhT3gEwAKpNcAdAb4RHENKUdwAMgGoT3AHQG+ERhDTlHQADoNoEdwD0RngEIU15B8AAqDbBHQC9ER5BSFPeATAAqk1wB0BvhEcQ0pR3AAyAahOUHfAD7CQ5Sc1vOWkAAAAASUVORK5CYII=" />
+							</div>
+							<h3 class="heading-tertiary">Fast and intuitive</h3>
+							<p class="subheading">
+								Oxford posh bevvy give us a bell gutted mate spend a penny
+								quaint cockup plastered.
+							</p>
+							<a href="#" class="btn btn--feature">
+								Read More
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="icon icon-more">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+								</svg>
+							</a>
+						</div>
+
+						<div class="feature">
+							<svg
+								class="icon icon--gear"
+								xmlns="http://www.w3.org/2000/svg"
+								x="0px"
+								y="0px"
+								width="96"
+								height="96"
+								viewBox="0,0,256,256"
+								style="fill: #000000">
+								<g
+									transform="translate(74.66667,74.66667) scale(0.41667,0.41667)">
+									<g
+										fill="#6c88f7"
+										fill-rule="nonzero"
+										stroke="none"
+										stroke-width="1"
+										stroke-linecap="butt"
+										stroke-linejoin="miter"
+										stroke-miterlimit="10"
+										stroke-dasharray=""
+										stroke-dashoffset="0"
+										font-family="none"
+										font-weight="none"
+										font-size="none"
+										text-anchor="none"
+										style="mix-blend-mode: normal">
+										<path
+											d="M-179.2,435.2v-614.4h614.4v614.4z"
+											id="bgRectangle"></path>
+									</g>
+									<g
+										fill="#ffffff"
+										fill-rule="nonzero"
+										stroke="none"
+										stroke-width="1"
+										stroke-linecap="butt"
+										stroke-linejoin="miter"
+										stroke-miterlimit="10"
+										stroke-dasharray=""
+										stroke-dashoffset="0"
+										font-family="none"
+										font-weight="none"
+										font-size="none"
+										text-anchor="none"
+										style="mix-blend-mode: normal">
+										<g transform="scale(10.66667,10.66667)">
+											<path
+												d="M10.49023,2c-0.479,0 -0.88847,0.33859 -0.98047,0.80859l-0.33398,1.71484c-0.82076,0.31036 -1.57968,0.74397 -2.24609,1.29102l-1.64453,-0.56641c-0.453,-0.156 -0.95141,0.03131 -1.19141,0.44531l-1.50781,2.61328c-0.239,0.415 -0.15202,0.94186 0.20898,1.25586l1.31836,1.14648c-0.06856,0.42135 -0.11328,0.8503 -0.11328,1.29102c0,0.44072 0.04472,0.86966 0.11328,1.29102l-1.31836,1.14648c-0.361,0.314 -0.44798,0.84086 -0.20898,1.25586l1.50781,2.61328c0.239,0.415 0.73841,0.60227 1.19141,0.44727l1.64453,-0.56641c0.6662,0.54671 1.42571,0.97884 2.24609,1.28906l0.33398,1.71484c0.092,0.47 0.50147,0.80859 0.98047,0.80859h3.01953c0.479,0 0.88847,-0.33859 0.98047,-0.80859l0.33399,-1.71484c0.82076,-0.31036 1.57968,-0.74397 2.24609,-1.29102l1.64453,0.56641c0.453,0.156 0.95141,-0.03031 1.19141,-0.44531l1.50781,-2.61523c0.239,-0.415 0.15202,-0.93991 -0.20898,-1.25391l-1.31836,-1.14648c0.06856,-0.42135 0.11328,-0.8503 0.11328,-1.29102c0,-0.44072 -0.04472,-0.86966 -0.11328,-1.29102l1.31836,-1.14648c0.361,-0.314 0.44798,-0.84086 0.20898,-1.25586l-1.50781,-2.61328c-0.239,-0.415 -0.73841,-0.60227 -1.19141,-0.44727l-1.64453,0.56641c-0.6662,-0.54671 -1.42571,-0.97884 -2.24609,-1.28906l-0.33399,-1.71484c-0.092,-0.47 -0.50147,-0.80859 -0.98047,-0.80859zM12,8c2.209,0 4,1.791 4,4c0,2.209 -1.791,4 -4,4c-2.209,0 -4,-1.791 -4,-4c0,-2.209 1.791,-4 4,-4z"></path>
+										</g>
+									</g>
+								</g>
+							</svg>
+							<h3 class="heading-tertiary">Fast and intuitive</h3>
+							<p class="subheading">
+								Oxford posh bevvy give us a bell gutted mate spend a penny
+								quaint cockup plastered.
+							</p>
+							<a href="#" class="btn btn--feature">
+								Read More
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="icon icon-more">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+								</svg>
+							</a>
+						</div>
+
+						<div class="feature">
+							<svg
+								class="icon icon--lock"
+								xmlns="http://www.w3.org/2000/svg"
+								x="0px"
+								y="0px"
+								width="90"
+								height="90"
+								viewBox="0,0,256,256"
+								style="fill: #000000">
+								<g transform="translate(76.8,76.8) scale(0.4,0.4)">
+									<g
+										fill="#48b094"
+										fill-rule="nonzero"
+										stroke="none"
+										stroke-width="1"
+										stroke-linecap="butt"
+										stroke-linejoin="miter"
+										stroke-miterlimit="10"
+										stroke-dasharray=""
+										stroke-dashoffset="0"
+										font-family="none"
+										font-weight="none"
+										font-size="none"
+										text-anchor="none"
+										style="mix-blend-mode: normal">
+										<path d="M-192,448v-640h640v640z" id="bgRectangle"></path>
+									</g>
+									<g
+										fill="#ffffff"
+										fill-rule="nonzero"
+										stroke="none"
+										stroke-width="1"
+										stroke-linecap="butt"
+										stroke-linejoin="miter"
+										stroke-miterlimit="10"
+										stroke-dasharray=""
+										stroke-dashoffset="0"
+										font-family="none"
+										font-weight="none"
+										font-size="none"
+										text-anchor="none"
+										style="mix-blend-mode: normal">
+										<g transform="scale(8.53333,8.53333)">
+											<path
+												d="M15,2c-3.85433,0 -7,3.14567 -7,7v2h-2c-1.105,0 -2,0.895 -2,2v12c0,1.105 0.895,2 2,2h18c1.105,0 2,-0.895 2,-2v-12c0,-1.105 -0.895,-2 -2,-2h-2v-2c0,-3.72842 -2.96342,-6.73143 -6.64453,-6.92773c-0.11309,-0.04556 -0.23356,-0.07005 -0.35547,-0.07227zM15,4c2.77367,0 5,2.22633 5,5v2h-10v-2c0,-2.77367 2.22633,-5 5,-5z"></path>
+										</g>
+									</g>
+								</g>
+							</svg>
+							<h3 class="heading-tertiary">Fast and intuitive</h3>
+							<p class="subheading">
+								Oxford posh bevvy give us a bell gutted mate spend a penny
+								quaint cockup plastered.
+							</p>
+							<a href="#" class="btn btn--feature">
+								Read More
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="icon icon-more">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Marketing Section -->
+			<section class="section-marketing container">
+				<div class="marketing-img-box">
+					<img src="imgs/about-thumb.png" alt="" />
+				</div>
+				<div class="marketing-text-box">
+					<header class="marketing-header">
+						<h4 class="market">Marketing</h4>
+						<h2 class="heading-secondary">
+							Make a lasting impression with appie.
+						</h2>
+						<p class="subheading">
+							Jolly good quaint james bond victoria sponge happy days cras arse
+							over blatant.
+						</p>
+					</header>
+					<ul class="marketing-list">
+						<li class="marketing-list-item">
+							<ion-icon class="icon--check" name="checkmark-circle"></ion-icon>
+							<div class="list-text">
+								<h3 class="heading-tertiary">Carefully designed</h3>
+								<p class="subheading">
+									Mucker plastered bugger all mate morish are.
+								</p>
+							</div>
+						</li>
+						<li class="marketing-list-item">
+							<ion-icon class="icon--check" name="checkmark-circle"></ion-icon>
+							<div class="list-text">
+								<h3 class="heading-tertiary">Choose an App</h3>
+								<p class="subheading">
+									Mucker plastered bugger all mate morish are.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Wherever Section -->
+			<section class="section-wherever">
+				<header class="wherever-header">
+					<h2 class="heading-secondary center-text">
+						Wherever you need<br />us the most
+					</h2>
+					<p class="subheading center-text">
+						The full monty spiffing good time no biggie cack grub fantastic.
+					</p>
+				</header>
+				<div class="grid grid--2-cols wherever-container">
+					<div class="wherever-text-box">
+						<ul class="wherever-list">
+							<li class="wherever-list-item">
+								<h3 class="heading-tertiary first">Well integrated</h3>
+								<p class="subheading">
+									The bee's knees chancer car boot absolutely.
+								</p>
+							</li>
+							<li class="wherever-list-item">
+								<h3 class="heading-tertiary second">Clean and modern design</h3>
+								<p class="subheading">
+									The bee's knees chancer car boot absolutely.
+								</p>
+							</li>
+							<li class="wherever-list-item">
+								<h3 class="heading-tertiary third">Light and dark mode</h3>
+								<p class="subheading">
+									The bee's knees chancer car boot absolutely.
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="wherever-img-box">
+						<img src="imgs/features-thumb-2.png" alt="App image 	" />
+					</div>
+				</div>
+			</section>
+
+			<!-- How Section -->
+			<section class="section-how">
+				<div class="container">
+					<div class="how-text-box">
+						<h2 class="heading-secondary">How does it work</h2>
+						<p class="subheading">
+							The full monty spiffing good time no biggie cack grub fantastic
+						</p>
+					</div>
+					<div class="numbers grid grid--4-cols">
+						<figure>
+							<svg
+								id="Layer_1"
+								enable-background="new 0 0 512 512"
+								height="64px"
+								viewBox="0 0 512 512"
+								width="64px"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									id="XMLID_802_"
+									d="m428.842 321.658c0 62.805-50.913 36.579-113.718 36.579s-113.718 26.226-113.718-36.579 50.913-113.718 113.718-113.718 113.718 50.914 113.718 113.718z"
+									fill="#6d81d5" />
+								<g fill="#5169cd">
+									<path
+										id="XMLID_803_"
+										d="m303.168 358.535c-57.189 2.701-101.76 21.884-101.76-36.872 0-32.388 13.545-61.611 35.264-82.33 37.757 27.038 63.27 70.126 66.496 119.202z" />
+									<path
+										id="XMLID_804_"
+										d="m428.843 321.663c0 40.253-20.915 43.933-52.478 41.376 17.781-2.422 28.574-12.452 28.574-41.376 0-58.766-44.572-107.121-101.76-113.089 3.927-.423 7.906-.629 11.947-.629 62.806.001 113.717 50.912 113.717 113.718z" />
+									<path
+										id="XMLID_805_"
+										d="m422.895 285.266c-.32.01-.629.01-.948.01-34.758 0-65.631-16.895-84.866-42.892-6.968 2.072-14.328 3.206-21.956 3.206-21.616 0-41.18-8.968-55.148-23.389 16.328-9.092 35.13-14.256 55.148-14.256 50.076.001 92.597 32.368 107.77 77.321z" />
+								</g>
+								<circle
+									id="XMLID_1170_"
+									cx="315.124"
+									cy="168.767"
+									fill="#8897dc"
+									r="61.363" />
+								<path
+									id="XMLID_807_"
+									d="m376.489 168.765c0 29.306-20.544 53.808-48.015 59.9-7.69-14.627-12.04-31.264-12.04-48.901 0-25.388 9.009-48.705 23.997-66.919 21.266 9.637 36.058 31.047 36.058 55.92z"
+									fill="#6d81d5" />
+								<path
+									id="XMLID_809_"
+									d="m288.05 369.088c0 79.543-64.482 46.327-144.025 46.327s-144.025 33.216-144.025-46.327 64.482-144.025 144.025-144.025 144.025 64.482 144.025 144.025z"
+									fill="#64b9fc" />
+								<path
+									id="XMLID_810_"
+									d="m210.097 241.096c-16.884 16.998-40.273 27.533-66.074 27.533s-49.19-10.545-66.064-27.543c19.791-10.236 42.252-16.019 66.064-16.019s46.283 5.783 66.074 16.029z"
+									fill="#31a7fb" />
+								<path
+									id="XMLID_811_"
+									d="m288.046 369.09c0 49.282-24.76 55.282-62.518 52.694 23.956-2.484 38.624-14.771 38.624-52.694 0-75.516-58.127-137.457-132.076-143.528 3.938-.33 7.927-.495 11.947-.495 79.547 0 144.023 64.477 144.023 144.023z"
+									fill="#31a7fb" />
+								<circle
+									id="XMLID_1163_"
+									cx="144.025"
+									cy="175.45"
+									fill="#8dcafc"
+									r="77.717" />
+								<path
+									id="XMLID_813_"
+									d="m221.745 175.455c0 42.912-34.8 77.712-77.722 77.712-4.123 0-8.164-.319-12.112-.938 37.171-5.814 65.61-37.985 65.61-76.774 0-38.799-28.44-70.971-65.61-76.784 3.948-.619 7.989-.938 12.112-.938 42.923 0 77.722 34.8 77.722 77.722z"
+									fill="#64b9fc" />
+								<circle
+									id="XMLID_1158_"
+									cx="421.947"
+									cy="179.761"
+									fill="#ec6264"
+									r="90.053" />
+								<path
+									id="XMLID_815_"
+									d="m511.996 179.756c0 49.736-40.314 90.061-90.05 90.061-4.793 0-9.494-.371-14.081-1.103 43.036-6.752 75.96-44.015 75.96-88.958 0-44.932-32.924-82.196-75.96-88.948 4.587-.732 9.288-1.103 14.081-1.103 49.735 0 90.05 40.325 90.05 90.051z"
+									fill="#e64649" />
+								<path
+									id="XMLID_816_"
+									d="m438.953 212.058h-9.28v-72.321c0-4.267-3.459-7.726-7.726-7.726h-11.728c-4.267 0-7.726 3.459-7.726 7.726s3.459 7.726 7.726 7.726h4.002v64.595h-9.28c-4.267 0-7.726 3.459-7.726 7.726s3.459 7.726 7.726 7.726h34.013c4.267 0 7.726-3.459 7.726-7.726 0-4.266-3.46-7.726-7.727-7.726z"
+									fill="#eff5f6" />
+							</svg>
+							<h3 class="heading-tertiary"><strong>45</strong>k+</h3>
+							<p class="subheading">Active Installation</p>
+						</figure>
+						<figure>
+							<svg
+								height="64px"
+								width="64px"
+								version="1.1"
+								id="Icons"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								x="0px"
+								y="0px"
+								viewBox="0 0 512 477.1"
+								style="enable-background: new 0 0 512 477.1"
+								xml:space="preserve">
+								<style type="text/css">
+									.st0 {
+										fill: #d6aa49;
+									}
+									.st1 {
+										fill: #2783ec;
+									}
+									.st2 {
+										fill: #439af6;
+									}
+									.st3 {
+										fill: #f0f2f5;
+									}
+									.st4 {
+										fill: #fccb55;
+									}
+									.st5 {
+										fill: #ffd880;
+									}
+									.st6 {
+										fill: #1f61a3;
+									}
+									.st7 {
+										fill: #ffe7b3;
+									}
+								</style>
+								<path class="st0" d="M358.4,341.5h51.2v93.9h-51.2V341.5z" />
+								<path
+									class="st1"
+									d="M52.7,349.9h-1.5c-24-0.9-42.9-20.7-42.7-44.7V25.6c0-9.4,7.7-17,17.1-17.1h120.9c4.5,0,8.9,1.8,12.1,5
+	l24.1,24.1c3.2,3.2,7.6,5,12.1,5h103.9c9.4,0,17,7.7,17.1,17.1v34.1l-221.9,256L52.7,349.9z" />
+								<path
+									class="st2"
+									d="M401.1,110.9v238.9H52.7c23-0.8,41.2-19.7,41.1-42.7V110.9c0-9.4,7.7-17,17.1-17.1H384
+	C393.4,93.9,401,101.5,401.1,110.9z" />
+								<path
+									class="st3"
+									d="M136.5,128h102.4c4.7,0,8.5,3.8,8.5,8.5v51.2c0,4.7-3.8,8.5-8.5,8.5H136.5c-4.7,0-8.5-3.8-8.5-8.5v-51.2
+	C128,131.8,131.8,128,136.5,128z" />
+								<path
+									class="st4"
+									d="M349.9,418.3h68.3c18.9,0,34.1,15.3,34.1,34.1v8.5c0,4.7-3.8,8.5-8.5,8.5H324.3c-4.7,0-8.5-3.8-8.5-8.5v-8.5
+	C315.7,433.5,331,418.3,349.9,418.3z" />
+								<path
+									class="st5"
+									d="M324.3,315.9c-9.4-4.1-17.9-10.2-24.7-17.9c-22.4-22.4-35-52.8-35-84.5c0-4.7,3.8-8.5,8.5-8.5h221.9
+	c4.7,0,8.5,3.8,8.5,8.5c0,31.7-12.6,62.1-35,84.5c-6.9,7.7-15.3,13.8-24.7,17.9H324.3z" />
+								<path
+									class="st4"
+									d="M324.3,179.3h119.5c4.7,0,8.5,3.8,8.5,8.5v110.9c0,37.7-30.6,68.3-68.3,68.3s-68.3-30.6-68.3-68.3V187.9
+	C315.7,183.2,319.6,179.3,324.3,179.3z" />
+								<path
+									class="st6"
+									d="M230.4,238.9h-93.9c-4.7,0-8.5-3.8-8.5-8.5s3.8-8.5,8.5-8.5h93.9c4.7,0,8.5,3.8,8.5,8.5
+	S235.1,238.9,230.4,238.9z" />
+								<path
+									class="st6"
+									d="M196.3,273.1h-59.7c-4.7,0-8.5-3.8-8.5-8.5s3.8-8.5,8.5-8.5h59.7c4.7,0,8.5,3.8,8.5,8.5S201,273.1,196.3,273.1z
+	" />
+								<g>
+									<path
+										class="st7"
+										d="M349.9,230.5c-4.7,0-8.5-3.8-8.5-8.5v-8.5c0-4.7,3.8-8.5,8.5-8.5c4.7,0,8.5,3.8,8.5,8.5v8.5
+		C358.4,226.7,354.6,230.5,349.9,230.5z" />
+									<path
+										class="st7"
+										d="M384,341.5c-23.6,0-42.6-19.1-42.7-42.7v-42.7c0-4.7,3.8-8.5,8.5-8.5c4.7,0,8.5,3.8,8.5,8.5v42.7
+		c0,14.1,11.5,25.6,25.6,25.6c4.7,0,8.5,3.8,8.5,8.5S388.7,341.5,384,341.5z" />
+								</g>
+							</svg>
+
+							<h3 class="heading-tertiary"><strong>108</strong>k+</h3>
+							<p class="subheading">Active Installation</p>
+						</figure>
+						<figure>
+							<svg
+								id="Capa_1"
+								enable-background="new 0 0 512 512"
+								height="64px"
+								viewBox="0 0 512 512"
+								width="64px"
+								xmlns="http://www.w3.org/2000/svg">
+								<g>
+									<g>
+										<g>
+											<g>
+												<path
+													d="m215.008 226.584c5.882-13.617 9.148-28.628 9.148-44.404 0-61.899-50.179-112.078-112.078-112.078s-112.078 50.179-112.078 112.077 50.179 112.078 112.078 112.078c14.765 0 28.86-2.861 41.77-8.049 11.614-27.102 33.709-48.686 61.16-59.624z"
+													fill="#fd4755" />
+												<g>
+													<path
+														d="m43.176 182.179c0-54.513 38.922-99.929 90.49-109.992-6.987-1.363-14.202-2.086-21.588-2.086-61.899.001-112.078 50.179-112.078 112.078s50.179 112.078 112.078 112.078c7.386 0 14.601-.722 21.588-2.086-51.568-10.063-90.49-55.478-90.49-109.992z"
+														fill="#fb2b3a" />
+												</g>
+												<g>
+													<path
+														d="m147.691 245.195c-4.143 0-7.5-3.358-7.5-7.5 0-15.502-12.611-28.114-28.113-28.114s-28.113 12.612-28.113 28.114c0 4.142-3.357 7.5-7.5 7.5s-7.5-3.358-7.5-7.5c0-23.773 19.341-43.114 43.113-43.114s43.113 19.341 43.113 43.114c0 4.142-3.357 7.5-7.5 7.5z"
+														fill="#c41926" />
+												</g>
+												<g>
+													<g>
+														<path
+															d="m82.176 165.588h-24.626c-4.143 0-7.5-3.358-7.5-7.5s3.357-7.5 7.5-7.5h24.626c4.143 0 7.5 3.358 7.5 7.5s-3.358 7.5-7.5 7.5z"
+															fill="#c41926" />
+													</g>
+													<g>
+														<path
+															d="m166.605 165.588h-24.625c-4.143 0-7.5-3.358-7.5-7.5s3.357-7.5 7.5-7.5h24.625c4.143 0 7.5 3.358 7.5 7.5s-3.357 7.5-7.5 7.5z"
+															fill="#c41926" />
+													</g>
+												</g>
+											</g>
+										</g>
+									</g>
+									<g>
+										<path
+											d="m297.769 225.792c-12.909-5.188-27.004-8.049-41.769-8.049-61.899 0-112.078 50.179-112.078 112.078s50.179 112.077 112.078 112.077 112.078-50.179 112.078-112.078c0-15.776-3.266-30.788-9.148-44.404-27.451-10.938-49.546-32.522-61.161-59.624z"
+											fill="#fed402" />
+										<g>
+											<path
+												d="m186.978 329.821c0-54.535 38.952-99.964 90.55-110.004-6.968-1.356-14.163-2.074-21.528-2.074-61.899 0-112.078 50.179-112.078 112.078s50.179 112.078 112.078 112.078c7.364 0 14.56-.718 21.528-2.074-51.598-10.04-90.55-55.47-90.55-110.004z"
+												fill="#fac600" />
+										</g>
+										<g>
+											<g>
+												<path
+													d="m224.576 323.704c-4.143 0-7.5-3.358-7.5-7.5v-21.997c0-4.142 3.357-7.5 7.5-7.5s7.5 3.358 7.5 7.5v21.997c0 4.142-3.357 7.5-7.5 7.5z"
+													fill="#fb8801" />
+											</g>
+											<g>
+												<path
+													d="m287.424 323.704c-4.143 0-7.5-3.358-7.5-7.5v-21.997c0-4.142 3.357-7.5 7.5-7.5s7.5 3.358 7.5 7.5v21.997c0 4.142-3.358 7.5-7.5 7.5z"
+													fill="#fb8801" />
+											</g>
+										</g>
+										<g>
+											<path
+												d="m293.185 372.934h-74.369c-4.143 0-7.5-3.358-7.5-7.5s3.357-7.5 7.5-7.5h74.369c4.143 0 7.5 3.358 7.5 7.5s-3.358 7.5-7.5 7.5z"
+												fill="#fb8801" />
+										</g>
+									</g>
+									<g>
+										<g>
+											<circle
+												cx="399.922"
+												cy="182.179"
+												fill="#97d729"
+												r="112.078" />
+										</g>
+										<g>
+											<path
+												d="m330.597 182.179c0-54.588 39.028-100.053 90.702-110.033-6.921-1.337-14.065-2.045-21.376-2.045-61.899 0-112.078 50.179-112.078 112.078s50.179 112.078 112.078 112.078c7.311 0 14.456-.708 21.376-2.045-51.674-9.98-90.702-55.445-90.702-110.033z"
+												fill="#8bc727" />
+										</g>
+										<g>
+											<path
+												d="m399.922 245.195c-23.772 0-43.113-19.341-43.113-43.114 0-4.142 3.357-7.5 7.5-7.5s7.5 3.358 7.5 7.5c0 15.502 12.611 28.114 28.113 28.114s28.113-12.612 28.113-28.114c0-4.142 3.357-7.5 7.5-7.5s7.5 3.358 7.5 7.5c0 23.773-19.341 43.114-43.113 43.114z"
+												fill="#78a91f" />
+										</g>
+										<g>
+											<g>
+												<path
+													d="m376.44 168.995c-4.143 0-7.5-3.358-7.5-7.5 0-5.751-4.679-10.43-10.43-10.43s-10.43 4.679-10.43 10.43c0 4.142-3.357 7.5-7.5 7.5s-7.5-3.358-7.5-7.5c0-14.022 11.407-25.43 25.43-25.43s25.43 11.408 25.43 25.43c0 4.142-3.357 7.5-7.5 7.5z"
+													fill="#78a91f" />
+											</g>
+											<g>
+												<path
+													d="m459.264 168.995c-4.143 0-7.5-3.358-7.5-7.5 0-5.751-4.679-10.43-10.431-10.43-5.751 0-10.43 4.679-10.43 10.43 0 4.142-3.357 7.5-7.5 7.5s-7.5-3.358-7.5-7.5c0-14.022 11.407-25.43 25.43-25.43s25.431 11.408 25.431 25.43c0 4.142-3.358 7.5-7.5 7.5z"
+													fill="#78a91f" />
+											</g>
+										</g>
+									</g>
+								</g>
+							</svg>
+							<h3 class="heading-tertiary"><strong>307</strong>k+</h3>
+							<p class="subheading">Active Installation</p>
+						</figure>
+						<figure>
+							<svg
+								id="Capa_1"
+								enable-background="new 0 0 512 512"
+								height="64px"
+								viewBox="0 0 512 512"
+								width="64px"
+								xmlns="http://www.w3.org/2000/svg">
+								<g>
+									<path
+										d="m506.8 402.959c-1.806 16.472-15.148 29.341-31.682 30.499-1.368.097-2.726.193-4.085.281-10.081.684-17.919 9.056-17.919 19.163v38.204c0 12.852-14.71 20.145-24.932 12.361-18.655-14.21-43.473-35.346-58.7-57.263-3.603-5.19-9.555-8.214-15.876-8.179-46.883.237-93.766-1.271-140.649-4.567-13.071-.912-24.169-9.126-29.113-20.68-1.315-3.033-2.192-6.312-2.569-9.739-6.943-63.425-6.943-126.859 0-190.294 1.806-16.455 15.157-29.263 31.664-30.42 69.842-4.901 139.676-5.882 209.51-2.946 17.55.728 35.11 1.709 52.66 2.946 16.516 1.157 29.876 13.965 31.682 30.42 6.944 63.407 6.944 126.806.009 190.214z"
+										fill="#78d0b1" />
+									<path
+										d="m199.16 211.001c-7.111 64.942-7.111 129.891 0 194.82.385 3.515 1.284 6.867 2.629 9.977 3.44 8.043 9.794 14.505 17.716 18.108-2.183-.142-4.366-.291-6.55-.446-13.072-.912-24.171-9.125-29.112-20.683-1.318-3.035-2.197-6.313-2.569-9.74-6.948-63.421-6.948-126.857 0-190.292 1.805-16.452 15.154-29.261 31.66-30.416 3.224-.223 6.448-.446 9.679-.649-12.571 4.325-21.946 15.586-23.453 29.321z"
+										fill="#66b49d" />
+									<g>
+										<path
+											d="m305.554 379.278c.02 10.337 13.59 18.706 23.927 18.706h80.006c8.318 0 15.062-6.744 15.062-15.067 0-4.159-1.681-7.93-4.407-10.655s-6.496-4.412-10.655-4.412h5.408c8.318 0 15.067-6.739 15.067-15.067 0-4.164-1.681-7.925-4.417-10.655-2.721-2.726-6.487-4.407-10.651-4.407h5.413c8.216 0 14.897-6.584 15.057-14.766.17-8.454-6.943-15.368-15.398-15.368h-5.073c8.318 0 15.067-6.744 15.067-15.072 0-4.164-1.681-7.925-4.417-10.655-2.721-2.726-6.487-4.407-10.651-4.407h-42.376c-.06-.095-.079-.124-.139-.219l16.525-35.202c4.689-9.98.394-21.87-9.586-26.558-2.74-1.288-5.626-1.895-8.469-1.895-7.502 0-14.688 4.247-18.089 11.486l-7.065 15.053c-4.174 8.887-10.859 16.399-19.324 21.364-5.588 3.275-10.242 8.27-13.085 14.664-1.939 4.363-2.808 8.96-2.726 13.473z"
+											fill="#ffddce" />
+										<g fill="#ffcbbe">
+											<path
+												d="m385.494 219.986c-.68-.073-1.36-.107-2.041-.107-7.502 0-14.688 4.247-18.089 11.486l-7.065 15.053c-4.174 8.887-10.859 16.399-19.324 21.364-5.588 3.275-25.689 8.362-26.432 46.441-.058 2.974-1.132 5.719-1.919 8.459l-.063-33.064c-.083-4.514.787-9.11 2.726-13.473 2.842-6.394 7.497-11.389 13.085-14.664 8.464-4.966 15.15-12.477 19.324-21.364l7.065-15.053c3.401-7.24 10.587-11.486 18.089-11.486 2.842 0 5.729.607 8.469 1.895 2.404 1.127 4.479 2.677 6.175 4.513z" />
+											<path
+												d="m424.549 382.917c0 8.323-6.744 15.067-15.062 15.067h-82.095c-8.688 0-16.743-4.198-21.729-11.098h103.823c6.36 0 11.797-3.94 14.008-9.518.005.005.005.015.015.019 0 0-.005.005 0 .005.671 1.711 1.04 3.577 1.04 5.525z" />
+											<path
+												d="m428.898 347.233c.68 1.718 1.058 3.59 1.058 5.548 0 8.327-6.743 15.07-15.064 15.07h-5.773c-3.065 0-5.549-2.484-5.549-5.549 0-3.065 2.484-5.549 5.549-5.549h5.773c6.362.001 11.797-3.942 14.006-9.52z" />
+											<path
+												d="m434.311 317.1c.68 1.718 1.058 3.59 1.058 5.548 0 8.327-6.743 15.07-15.064 15.07h-5.773c-3.065 0-5.549-2.484-5.549-5.549 0-3.065 2.484-5.549 5.549-5.549h5.773c6.361 0 11.797-3.943 14.006-9.52z" />
+											<path
+												d="m428.905 286.966c.68 1.718 1.058 3.59 1.058 5.548 0 8.327-6.743 15.07-15.064 15.07h-5.773c-3.065 0-5.549-2.484-5.549-5.549 0-3.065 2.484-5.549 5.549-5.549h5.773c6.361.001 11.797-3.943 14.006-9.52z" />
+										</g>
+										<path
+											d="m263.699 289.618v93.958c0 6.516 5.283 11.799 11.799 11.799h23.265c6.516 0 11.799-5.283 11.799-11.799v-93.958c0-6.516-5.283-11.799-11.799-11.799h-23.265c-6.516 0-11.799 5.282-11.799 11.799z"
+											fill="#f1f4f6" />
+										<path
+											d="m263.696 353.981v29.598c0 6.516 5.286 11.796 11.802 11.796h23.264c6.516 0 11.796-5.28 11.796-11.796v-29.598c0 6.516-5.28 11.803-11.796 11.803h-23.264c-6.516-.001-11.802-5.287-11.802-11.803z"
+											fill="#d0e2e7" />
+									</g>
+									<path
+										d="m5.004 221.907c1.736 15.839 14.566 28.214 30.465 29.327 1.315.093 2.622.185 3.928.27 9.694.657 17.23 8.708 17.23 18.427v36.736c0 12.358 14.145 19.371 23.974 11.886 17.938-13.664 41.802-33.988 56.445-55.062 3.465-4.99 9.188-7.899 15.266-7.865 45.082.228 90.163-1.222 135.245-4.392 12.568-.877 23.24-8.775 27.995-19.886 1.264-2.917 2.107-6.069 2.47-9.365 6.676-60.988 6.676-121.985 0-182.982-1.737-15.822-14.575-28.138-30.448-29.251-67.16-4.711-134.31-5.655-201.461-2.832-16.876.7-33.761 1.644-50.637 2.832-15.881 1.113-28.727 13.429-30.464 29.252-6.676 60.971-6.676 121.934-.008 182.905z"
+										fill="#f9da41" />
+									<path
+										d="m22.209 37.325c-6.837 62.447-6.837 124.9 0 187.334.371 3.38 1.235 6.603 2.528 9.593 3.308 7.734 9.418 13.948 17.035 17.412-2.099-.136-4.199-.28-6.298-.429-12.57-.877-23.242-8.774-27.993-19.888-1.267-2.918-2.112-6.071-2.47-9.366-6.681-60.984-6.681-121.982 0-182.98 1.735-15.82 14.572-28.136 30.444-29.248 3.1-.214 6.201-.429 9.307-.624-12.089 4.161-21.104 14.989-22.553 28.196z"
+										fill="#edc932" />
+									<g fill="#21386b">
+										<path
+											d="m215.692 125.812c9.482 0 17.195-12.817 17.195-28.572s-7.713-28.572-17.195-28.572c-9.481 0-17.194 12.817-17.194 28.572s7.713 28.572 17.194 28.572z" />
+										<path
+											d="m107.339 125.812c9.482 0 17.195-12.817 17.195-28.572s-7.713-28.572-17.195-28.572c-9.481 0-17.194 12.817-17.194 28.572s7.713 28.572 17.194 28.572z" />
+										<path
+											d="m220.739 146.815c-3.936-1.655-8.464.186-10.122 4.118-8.349 19.804-27.623 32.6-49.102 32.6-21.48 0-40.754-12.796-49.103-32.6-1.657-3.932-6.191-5.773-10.122-4.118-3.932 1.658-5.776 6.189-4.118 10.121 10.77 25.544 35.633 42.05 63.342 42.05 27.708 0 52.571-16.506 63.341-42.05 1.66-3.932-.184-8.463-4.116-10.121z" />
+									</g>
+								</g>
+							</svg>
+							<h3 class="heading-tertiary"><strong>725</strong>k+</h3>
+							<p class="subheading">Active Installation</p>
+						</figure>
+					</div>
+				</div>
+
+				<div class="container studio">
+					<!-- grid grid--2-cols -->
+					<!-- <div class="studio-img-box"> -->
+					<img
+						class="studio-img--big"
+						src="imgs/video-thumb-1.jpg"
+						alt="Photo of video thumbnail" />
+					<img
+						class="studio-img--small"
+						src="imgs/video-slide-1.jpg"
+						alt="Photo of the app open on a smart phone" />
+					<!-- </div> -->
+
+					<!-- <div class="studio-text-container"> -->
+					<div class="studio-text-box">
+						<h3 class="heading-tertiary">
+							Watch the two-minute video to learn how.
+						</h3>
+						<p class="subheading">
+							The wireless cheesed on your bike mate zonked a load of old tosh
+							hunky dory it's all gone to pot haggle william car boot pear
+							shaped geeza.
+						</p>
+
+						<a href="#" class="btn btn--studio-cta"> Get Started </a>
+					</div>
+
+					<div class="studio-buttons">
+						<button type="button" class="btn btn--studio">
+							<!-- class="icon icon--studio" -->
+							<ion-icon
+								class="icon icon--studio"
+								name="arrow-back-circle-outline"></ion-icon>
+						</button>
+						<button type="button" class="btn btn--studio">
+							<ion-icon
+								class="icon icon--studio"
+								name="arrow-forward-circle-outline"></ion-icon>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Download Section -->
+			<section class="section-download">
+				<div class="container download-container">
+					<h4 class="download">Download Our App</h4>
+					<h2 class="heading-secondary">
+						App is available<br />for free on app store
+					</h2>
+					<p class="subheading">
+						Jolly good quaint james bond victoria sponge happy days cras<br />
+						arse over blatant.
+					</p>
+
+					<div class="download-buttons">
+						<a href="#" class="btn btn--download btn--ios">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								x="0px"
+								y="0px"
+								width="500"
+								height="500"
+								viewBox="0,0,256,256"
+								style="fill: #000000">
+								<g
+									fill="#0e1133"
+									fill-rule="nonzero"
+									stroke="none"
+									stroke-width="1"
+									stroke-linecap="butt"
+									stroke-linejoin="miter"
+									stroke-miterlimit="10"
+									stroke-dasharray=""
+									stroke-dashoffset="0"
+									font-family="none"
+									font-weight="none"
+									font-size="none"
+									text-anchor="none"
+									style="mix-blend-mode: normal">
+									<path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+								</g>
+								<g
+									fill="#ffffff"
+									fill-rule="nonzero"
+									stroke="none"
+									stroke-width="1"
+									stroke-linecap="butt"
+									stroke-linejoin="miter"
+									stroke-miterlimit="10"
+									stroke-dasharray=""
+									stroke-dashoffset="0"
+									font-family="none"
+									font-weight="none"
+									font-size="none"
+									text-anchor="none"
+									style="mix-blend-mode: normal">
+									<g transform="scale(5.12,5.12)">
+										<path
+											d="M44.52734,34.75c-1.07812,2.39453 -1.59766,3.46484 -2.98437,5.57813c-1.94141,2.95313 -4.67969,6.64063 -8.0625,6.66406c-3.01172,0.02734 -3.78906,-1.96484 -7.87891,-1.92969c-4.08594,0.01953 -4.9375,1.96875 -7.95312,1.9375c-3.38672,-0.03125 -5.97656,-3.35156 -7.91797,-6.30078c-5.42969,-8.26953 -6.00391,-17.96484 -2.64844,-23.12109c2.375,-3.65625 6.12891,-5.80469 9.65625,-5.80469c3.59375,0 5.85156,1.97266 8.82031,1.97266c2.88281,0 4.63672,-1.97656 8.79297,-1.97656c3.14063,0 6.46094,1.71094 8.83594,4.66406c-7.76562,4.25781 -6.50391,15.34766 1.33984,18.31641zM31.19531,8.46875c1.51172,-1.94141 2.66016,-4.67969 2.24219,-7.46875c-2.46484,0.16797 -5.34766,1.74219 -7.03125,3.78125c-1.52734,1.85938 -2.79297,4.61719 -2.30078,7.28516c2.69141,0.08594 5.47656,-1.51953 7.08984,-3.59766z"></path>
+									</g>
+								</g>
+							</svg>
+							<div>
+								<p>Download for</p>
+								<strong>iOS</strong>
+							</div>
+						</a>
+						<a href="#" class="btn btn--download btn--android">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								x="0px"
+								y="0px"
+								width="500"
+								height="500"
+								viewBox="0,0,256,256"
+								style="fill: #000000">
+								<g
+									fill="#ffffff"
+									fill-rule="nonzero"
+									stroke="none"
+									stroke-width="1"
+									stroke-linecap="butt"
+									stroke-linejoin="miter"
+									stroke-miterlimit="10"
+									stroke-dasharray=""
+									stroke-dashoffset="0"
+									font-family="none"
+									font-weight="none"
+									font-size="none"
+									text-anchor="none"
+									style="mix-blend-mode: normal">
+									<path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+								</g>
+								<g
+									fill="#0e1133"
+									fill-rule="nonzero"
+									stroke="none"
+									stroke-width="1"
+									stroke-linecap="butt"
+									stroke-linejoin="miter"
+									stroke-miterlimit="10"
+									stroke-dasharray=""
+									stroke-dashoffset="0"
+									font-family="none"
+									font-weight="none"
+									font-size="none"
+									text-anchor="none"
+									style="mix-blend-mode: normal">
+									<g transform="scale(5.12,5.12)">
+										<path
+											d="M7.125,2l21.65625,21.5l5.9375,-5.9375l-26.25,-15.15625c-0.4375,-0.25391 -0.90625,-0.39453 -1.34375,-0.40625zM5.3125,3c-0.19531,0.34766 -0.3125,0.75781 -0.3125,1.21875v41.78125c0,0.33594 0.07031,0.63672 0.1875,0.90625l22.15625,-22zM36.53125,18.59375l-6.34375,6.3125l6.34375,6.28125l7.75,-4.4375c1.10156,-0.63672 1.25781,-1.44531 1.25,-1.875c-0.01172,-0.71094 -0.46094,-1.375 -1.21875,-1.78125c-0.66016,-0.35547 -5.5625,-3.21094 -7.78125,-4.5zM28.78125,26.3125l-21.84375,21.65625c0.36328,-0.01953 0.75781,-0.09766 1.125,-0.3125c0.85547,-0.49609 18.15625,-10.5 18.15625,-10.5l8.53125,-4.90625z"></path>
+									</g>
+								</g>
+							</svg>
+							<div>
+								<p>Download for</p>
+								<strong>Android</strong>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Pricing Section -->
+			<section id="pricing" class="section-pricing container">
+				<h2 class="heading-secondary center-text">
+					Simple pricing for Everyone
+				</h2>
+				<p class="subheading center-text margin-bottom-md">
+					The full monty spiffing good time no biggie cack grub fantastic.
+				</p>
+
+				<div class="pricing-buttons margin-bottom-md">
+					<button class="btn btn--pricing active">Monthly</button>
+					<button class="btn btn--pricing">Yearly</button>
+				</div>
+
+				<div class="plans grid grid--3-cols">
+					<div class="card">
+						<h3 class="heading-tertiary">Fresh</h3>
+						<p class="card-price subheading">
+							<span>$ </span><strong>04</strong>/month
+						</p>
+						<p class="subheading">Get your 14 day free trial</p>
+
+						<ul class="card-list">
+							<li class="card-list-item">
+								<svg
+									class="icon--card"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="30"
+									height="30"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g
+										transform="translate(59.73333,59.73333) scale(0.53333,0.53333)">
+										<g
+											fill="#eff0f6"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path d="M-112,368v-480h480v480z" id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#5bc46b"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(8.53333,8.53333)">
+												<path
+													d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+								60-day chat history
+							</li>
+							<li class="card-list-item">
+								<svg
+									class="icon--card"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="30"
+									height="30"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g
+										transform="translate(59.73333,59.73333) scale(0.53333,0.53333)">
+										<g
+											fill="#eff0f6"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path d="M-112,368v-480h480v480z" id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#5bc46b"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(8.53333,8.53333)">
+												<path
+													d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+								15 GB cloud storage
+							</li>
+							<li class="card-list-item">
+								<svg
+									class="icon--card"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="30"
+									height="30"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g
+										transform="translate(59.73333,59.73333) scale(0.53333,0.53333)">
+										<g
+											fill="#eff0f6"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path d="M-112,368v-480h480v480z" id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#5bc46b"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(8.53333,8.53333)">
+												<path
+													d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+								24/7 Support
+							</li>
+						</ul>
+
+						<button class="btn btn--plan">Choose plan</button>
+					</div>
+
+					<div class="card card--active">
+						<h3 class="heading-tertiary">Sweet</h3>
+						<p class="card-price subheading">
+							<span>$ </span><strong>16</strong>/month
+						</p>
+						<p class="subheading">Billed $192 per website annually.</p>
+
+						<ul class="card-list">
+							<li class="card-list-item">
+								<svg
+									class="icon--card"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="30"
+									height="30"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g
+										transform="translate(59.73333,59.73333) scale(0.53333,0.53333)">
+										<g
+											fill="#eff0f6"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path d="M-112,368v-480h480v480z" id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#5bc46b"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(8.53333,8.53333)">
+												<path
+													d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+								60-day chat history
+							</li>
+							<li class="card-list-item">
+								<svg
+									class="icon--card"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="30"
+									height="30"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g
+										transform="translate(59.73333,59.73333) scale(0.53333,0.53333)">
+										<g
+											fill="#eff0f6"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path d="M-112,368v-480h480v480z" id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#5bc46b"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(8.53333,8.53333)">
+												<path
+													d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+								50 GB cloud storage
+							</li>
+							<li class="card-list-item">
+								<svg
+									class="icon--card"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="30"
+									height="30"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g
+										transform="translate(59.73333,59.73333) scale(0.53333,0.53333)">
+										<g
+											fill="#eff0f6"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path d="M-112,368v-480h480v480z" id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#5bc46b"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(8.53333,8.53333)">
+												<path
+													d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+								24/7 Support
+							</li>
+						</ul>
+
+						<button class="btn btn--plan active">Choose plan</button>
+					</div>
+
+					<div class="card">
+						<h3 class="heading-tertiary">Juicy</h3>
+						<p class="card-price subheading">
+							<span>$ </span><strong>27</strong>/month
+						</p>
+						<p class="subheading">Billed $324 per website annually.</p>
+
+						<ul class="card-list">
+							<li class="card-list-item">
+								<svg
+									class="icon--card"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="30"
+									height="30"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g
+										transform="translate(59.73333,59.73333) scale(0.53333,0.53333)">
+										<g
+											fill="#eff0f6"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path d="M-112,368v-480h480v480z" id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#5bc46b"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(8.53333,8.53333)">
+												<path
+													d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+								60-day chat history
+							</li>
+							<li class="card-list-item">
+								<svg
+									class="icon--card"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="30"
+									height="30"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g
+										transform="translate(59.73333,59.73333) scale(0.53333,0.53333)">
+										<g
+											fill="#eff0f6"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path d="M-112,368v-480h480v480z" id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#5bc46b"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(8.53333,8.53333)">
+												<path
+													d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+								Data security
+							</li>
+							<li class="card-list-item">
+								<svg
+									class="icon--card"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="30"
+									height="30"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g
+										transform="translate(59.73333,59.73333) scale(0.53333,0.53333)">
+										<g
+											fill="#eff0f6"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path d="M-112,368v-480h480v480z" id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#5bc46b"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(8.53333,8.53333)">
+												<path
+													d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+								100 GB cloud storage
+							</li>
+							<li class="card-list-item">
+								<svg
+									class="icon--card"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="30"
+									height="30"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g
+										transform="translate(59.73333,59.73333) scale(0.53333,0.53333)">
+										<g
+											fill="#eff0f6"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path d="M-112,368v-480h480v480z" id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#5bc46b"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(8.53333,8.53333)">
+												<path
+													d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+								24/7 Support
+							</li>
+						</ul>
+
+						<button class="btn btn--plan">Choose plan</button>
+					</div>
+				</div>
+				<div class="testimonial-box">
+					<div class="testimonial-img-box">
+						<img
+							src="imgs/people/22.jpg"
+							alt="User testimonial and 5 star review"
+							class="testimonial-img" />
+						<div class="rating-stars">
+							<svg
+								class="icon star--icon"
+								width="17"
+								height="16"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+									fill="#FC7614"></path>
+							</svg>
+							<svg
+								class="icon star--icon"
+								width="17"
+								height="16"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+									fill="#FC7614"></path>
+							</svg>
+							<svg
+								class="icon star--icon"
+								width="17"
+								height="16"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+									fill="#FC7614"></path>
+							</svg>
+							<svg
+								class="icon star--icon"
+								width="17"
+								height="16"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+									fill="#FC7614"></path>
+							</svg>
+							<svg
+								class="icon star--icon"
+								width="17"
+								height="16"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+									fill="#FC7614"></path>
+							</svg>
+						</div>
+						<p class="review">(4.7) review</p>
+					</div>
+
+					<div class="testimonial-text-box">
+						<p class="testimonial-text">
+							Why I say old chap is piffing chip shop such a fibber the bee's
+							knees, the wireless Richard fantastic do one cracking goal pukka
+							baking cakes starkers mush don't get shirty with me argy bargy, I
+							naff chimney pot blimey he lost his bottle cup.
+						</p>
+						<div class="name-and-buttons">
+							<div>
+								<strong class="testimonial-name">Ahmed Ali</strong>
+								<p class="testimonial-job">Web developer</p>
+							</div>
+
+							<div class="testimonial-buttons">
+								<button type="button" class="btn btn--testimonial">
+									<!-- class="icon icon--studio" -->
+									<ion-icon
+										class="icon icon--studio md hydrated"
+										name="arrow-back-circle-outline"
+										aria-label="arrow back circle outline"
+										role="img"></ion-icon>
+								</button>
+								<button type="button" class="btn btn--testimonial">
+									<ion-icon
+										class="icon icon--studio md hydrated"
+										name="arrow-forward-circle-outline"
+										aria-label="arrow forward circle outline"
+										role="img"></ion-icon>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <img
+					class="testimonial-img--desktop"
+					src="imgs/testimonial-desktop.webp"
+					alt="User testimonia" />
+				<img
+					class="testimonial-img--mobile"
+					src="imgs/testimonial-mobile.webp"
+					alt="User testimonia" /> -->
+			</section>
+
+			<!-- Platforms Section -->
+			<section id="platforms" class="section-platforms container">
+				<h2 class="heading-secondary center-text">
+					Appie works best with<br />
+					your favorite platforms
+				</h2>
+				<p class="subheading center-text">
+					Join over 40,000 businesses worldwide.
+				</p>
+
+				<div class="platforms">
+					<div class="sponsers sponsers--1">
+						<img
+							src="imgs/sponsers/sponser-1.png"
+							alt="Platform Logo"
+							class="platform-logo logo1" />
+						<img
+							src="imgs/sponsers/sponser-2.png"
+							alt="Platform Logo"
+							class="platform-logo logo2" />
+						<img
+							src="imgs/sponsers/sponser-3.png"
+							alt="Platform Logo"
+							class="platform-logo logo3" />
+						<img
+							src="imgs/sponsers/sponser-4.png"
+							alt="Platform Logo"
+							class="platform-logo logo4" />
+						<img
+							src="imgs/sponsers/sponser-5.png"
+							alt="Platform Logo"
+							class="platform-logo logo5" />
+						<img
+							src="imgs/sponsers/sponser-6.png"
+							alt="Platform Logo"
+							class="platform-logo logo6" />
+					</div>
+
+					<div class="sponsers sponsers--2">
+						<img
+							src="imgs/sponsers/sponser-7.png"
+							alt="Platform Logo"
+							class="platform-logo logo7" />
+						<img
+							src="imgs/sponsers/sponser-8.png"
+							alt="Platform Logo"
+							class="platform-logo logo8" />
+						<img
+							src="imgs/sponsers/sponser-9.png"
+							alt="Platform Logo"
+							class="platform-logo logo9" />
+						<img
+							src="imgs/sponsers/sponser-10.png"
+							alt="Platform Logo"
+							class="platform-logo logo10" />
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer" class="footer">
+				<div class="footer-grid container">
+					<div class="footer-logo">
+						<img src="imgs/logo.png" alt="Appie Logo" />
+						<p class="subheading">
+							Appie WordPress theme is the last theme you will ever have.
+						</p>
+
+						<a href="#" class="btn btn--footer">
+							Read More
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon icon-more">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+							</svg>
+						</a>
+
+						<ul class="social-links">
+							<a href="#">
+								<svg
+									class="social-icon logo--facebook"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="48"
+									height="48"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g
+										transform="translate(53.33333,53.33333) scale(0.58333,0.58333)">
+										<g
+											fill="#ffffff"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path
+												d="M-91.42857,347.42857v-438.85714h438.85714v438.85714z"
+												id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#000000"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(10.66667,10.66667)">
+												<path
+													d="M17.525,9h-3.525v-2c0,-1.032 0.084,-1.682 1.563,-1.682h1.868v-3.18c-0.909,-0.094 -1.823,-0.14 -2.738,-0.138c-2.713,0 -4.693,1.657 -4.693,4.699v2.301h-3v4l3,-0.001v9.001h4v-9.003l3.066,-0.001z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+							</a>
+
+							<a href="#">
+								<svg
+									class="social-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="60"
+									height="60"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g
+										transform="translate(59.73333,59.73333) scale(0.53333,0.53333)">
+										<g
+											fill="#ffffff"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path d="M-112,368v-480h480v480z" id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#000000"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(8.53333,8.53333)">
+												<path
+													d="M28,6.937c-0.957,0.425 -1.985,0.711 -3.064,0.84c1.102,-0.66 1.947,-1.705 2.345,-2.951c-1.03,0.611 -2.172,1.055 -3.388,1.295c-0.973,-1.037 -2.359,-1.685 -3.893,-1.685c-2.946,0 -5.334,2.389 -5.334,5.334c0,0.418 0.048,0.826 0.138,1.215c-4.433,-0.222 -8.363,-2.346 -10.995,-5.574c-0.458,0.788 -0.721,1.704 -0.721,2.683c0,1.85 0.941,3.483 2.372,4.439c-0.874,-0.028 -1.697,-0.268 -2.416,-0.667c0,0.023 0,0.044 0,0.067c0,2.585 1.838,4.741 4.279,5.23c-0.447,0.122 -0.919,0.187 -1.406,0.187c-0.343,0 -0.678,-0.034 -1.003,-0.095c0.679,2.119 2.649,3.662 4.983,3.705c-1.825,1.431 -4.125,2.284 -6.625,2.284c-0.43,0 -0.855,-0.025 -1.273,-0.075c2.361,1.513 5.164,2.396 8.177,2.396c9.812,0 15.176,-8.128 15.176,-15.177c0,-0.231 -0.005,-0.461 -0.015,-0.69c1.043,-0.753 1.948,-1.692 2.663,-2.761z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+							</a>
+							<a href="#">
+								<svg
+									class="social-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="64"
+									height="64"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g transform="translate(56,56) scale(0.5625,0.5625)">
+										<g
+											fill="#ffffff"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path
+												d="M-99.55556,355.55556v-455.11111h455.11111v455.11111z"
+												id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#000000"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(8,8)">
+												<path
+													d="M16.09375,4c-5.077,0 -10.09375,3.38333 -10.09375,8.86133c0,3.483 1.95848,5.46289 3.14648,5.46289c0.49,0 0.77344,-1.36595 0.77344,-1.75195c0,-0.46 -1.17383,-1.44047 -1.17383,-3.35547c0,-3.978 3.02827,-6.79688 6.94727,-6.79688c3.37,0 5.86328,1.91364 5.86328,5.43164c0,2.627 -1.05475,7.55469 -4.46875,7.55469c-1.232,0 -2.28516,-0.89002 -2.28516,-2.16602c0,-1.87 1.19727,-3.68133 1.19727,-5.61133c0,-3.276 -4.53711,-2.68166 -4.53711,1.27734c0,0.831 0.10361,1.75081 0.47461,2.50781c-0.682,2.939 -1.9375,7.62334 -1.9375,10.65234c0,0.935 0.13366,1.85502 0.22266,2.79102c0.168,0.188 0.0848,0.16822 0.3418,0.07422c2.494,-3.414 2.26263,-4.38747 3.39063,-8.85547c0.609,1.158 2.18269,1.78125 3.42969,1.78125c5.255,0 7.61523,-5.12128 7.61523,-9.73828c0,-4.913 -4.24525,-8.11914 -8.90625,-8.11914z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+							</a>
+
+							<a href="#">
+								<svg
+									class="social-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									x="0px"
+									y="0px"
+									width="64"
+									height="64"
+									viewBox="0,0,256,256"
+									style="fill: #000000">
+									<g transform="translate(56,56) scale(0.5625,0.5625)">
+										<g
+											fill="#ffffff"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path
+												d="M-99.55556,355.55556v-455.11111h455.11111v455.11111z"
+												id="bgRectangle"></path>
+										</g>
+										<g
+											fill="#000000"
+											fill-rule="nonzero"
+											stroke="none"
+											stroke-width="1"
+											stroke-linecap="butt"
+											stroke-linejoin="miter"
+											stroke-miterlimit="10"
+											stroke-dasharray=""
+											stroke-dashoffset="0"
+											font-family="none"
+											font-weight="none"
+											font-size="none"
+											text-anchor="none"
+											style="mix-blend-mode: normal">
+											<g transform="scale(8,8)">
+												<path
+													d="M8.64258,4c-1.459,0 -2.64258,1.18163 -2.64258,2.64063c0,1.459 1.18262,2.66797 2.64063,2.66797c1.458,0 2.64258,-1.20897 2.64258,-2.66797c0,-1.458 -1.18163,-2.64062 -2.64062,-2.64062zM21.53516,11c-2.219,0 -3.48866,1.16045 -4.09766,2.31445h-0.06445v-2.00391h-4.37305v14.68945h4.55664v-7.27148c0,-1.916 0.14463,-3.76758 2.51563,-3.76758c2.337,0 2.37109,2.18467 2.37109,3.88867v7.15039h4.55078h0.00586v-8.06836c0,-3.948 -0.84884,-6.93164 -5.46484,-6.93164zM6.36328,11.31055v14.68945h4.56055v-14.68945z"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+							</a>
+						</ul>
+					</div>
+
+					<div class="footer-company">
+						<h3 class="heading-tertiary">Company</h3>
+						<ul class="company-list">
+							<li class="company-list-item"><a href="#">About Us</a></li>
+							<li class="company-list-item"><a href="#">Service</a></li>
+							<li class="company-list-item"><a href="#">Case Studies</a></li>
+							<li class="company-list-item"><a href="#">Blog</a></li>
+							<li class="company-list-item"><a href="#">Contact</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-support">
+						<h3 class="heading-tertiary">Support</h3>
+						<ul class="support-list">
+							<li class="support-list-item"><a href="#">Community</a></li>
+							<li class="support-list-item"><a href="#">Resources</a></li>
+							<li class="support-list-item"><a href="#">Faqs</a></li>
+							<li class="support-list-item"><a href="#">Privacy Policy</a></li>
+							<li class="support-list-item"><a href="#">Careers</a></li>
+						</ul>
+					</div>
+					<div class="footer-contact">
+						<h3 class="heading-tertiary">Get In Touch</h3>
+						<ul class="contact-list">
+							<li class="contact-list-item">
+								<svg
+									class="icon icon--contact"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+								</svg>
+								<a href="#">support@appie.com</a>
+							</li>
+							<li class="contact-list-item">
+								<svg
+									class="icon icon--contact turn"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+								</svg>
+
+								<a href="#">+(642) 342 762 44</a>
+							</li>
+							<li class="contact-list-item">
+								<svg
+									class="icon icon--contact icon--location"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+								</svg>
+
+								<a href="#"
+									>442 Belle Terre St Floor 7, San Francisco, AV 4206</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-end container">
+					<div class="footer-download-buttons">
+						<a
+							href="#"
+							class="btn btn--footer-download btn--footer-download-ios">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								x="0px"
+								y="0px"
+								width="50"
+								height="50"
+								viewBox="0,0,256,256"
+								style="fill: #000000">
+								<g transform="">
+									<g
+										fill="#ffffff"
+										fill-rule="nonzero"
+										stroke="none"
+										stroke-width="1"
+										stroke-linecap="butt"
+										stroke-linejoin="miter"
+										stroke-miterlimit="10"
+										stroke-dasharray=""
+										stroke-dashoffset="0"
+										font-family="none"
+										font-weight="none"
+										font-size="none"
+										text-anchor="none"
+										style="mix-blend-mode: normal">
+										<path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+									</g>
+									<g
+										fill="#000000"
+										fill-rule="nonzero"
+										stroke="none"
+										stroke-width="1"
+										stroke-linecap="butt"
+										stroke-linejoin="miter"
+										stroke-miterlimit="10"
+										stroke-dasharray=""
+										stroke-dashoffset="0"
+										font-family="none"
+										font-weight="none"
+										font-size="none"
+										text-anchor="none"
+										style="mix-blend-mode: normal">
+										<g transform="scale(5.12,5.12)">
+											<path
+												d="M44.52734,34.75c-1.07812,2.39453 -1.59766,3.46484 -2.98437,5.57813c-1.94141,2.95313 -4.67969,6.64063 -8.0625,6.66406c-3.01172,0.02734 -3.78906,-1.96484 -7.87891,-1.92969c-4.08594,0.01953 -4.9375,1.96875 -7.95312,1.9375c-3.38672,-0.03125 -5.97656,-3.35156 -7.91797,-6.30078c-5.42969,-8.26953 -6.00391,-17.96484 -2.64844,-23.12109c2.375,-3.65625 6.12891,-5.80469 9.65625,-5.80469c3.59375,0 5.85156,1.97266 8.82031,1.97266c2.88281,0 4.63672,-1.97656 8.79297,-1.97656c3.14063,0 6.46094,1.71094 8.83594,4.66406c-7.76562,4.25781 -6.50391,15.34766 1.33984,18.31641zM31.19531,8.46875c1.51172,-1.94141 2.66016,-4.67969 2.24219,-7.46875c-2.46484,0.16797 -5.34766,1.74219 -7.03125,3.78125c-1.52734,1.85938 -2.79297,4.61719 -2.30078,7.28516c2.69141,0.08594 5.47656,-1.51953 7.08984,-3.59766z"></path>
+										</g>
+									</g>
+								</g>
+							</svg>
+							<p>Download for i<span>OS</span></p>
+						</a>
+						<a
+							href="#"
+							class="btn btn--footer-download btn--footer-download-android">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								x="0px"
+								y="0px"
+								width="50"
+								height="50"
+								viewBox="0,0,256,256"
+								style="fill: #000000">
+								<g transform="translate(35.84,35.84) scale(0.72,0.72)">
+									<g
+										fill="#eef1f6"
+										fill-rule="nonzero"
+										stroke="none"
+										stroke-width="1"
+										stroke-linecap="butt"
+										stroke-linejoin="miter"
+										stroke-miterlimit="10"
+										stroke-dasharray=""
+										stroke-dashoffset="0"
+										font-family="none"
+										font-weight="none"
+										font-size="none"
+										text-anchor="none"
+										style="mix-blend-mode: normal">
+										<path
+											d="M-49.77778,305.77778v-355.55556h355.55556v355.55556z"
+											id="bgRectangle"></path>
+									</g>
+									<g
+										fill="#000000"
+										fill-rule="nonzero"
+										stroke="none"
+										stroke-width="1"
+										stroke-linecap="butt"
+										stroke-linejoin="miter"
+										stroke-miterlimit="10"
+										stroke-dasharray=""
+										stroke-dashoffset="0"
+										font-family="none"
+										font-weight="none"
+										font-size="none"
+										text-anchor="none"
+										style="mix-blend-mode: normal">
+										<g transform="scale(5.12,5.12)">
+											<path
+												d="M7.125,2l21.65625,21.5l5.9375,-5.9375l-26.25,-15.15625c-0.4375,-0.25391 -0.90625,-0.39453 -1.34375,-0.40625zM5.3125,3c-0.19531,0.34766 -0.3125,0.75781 -0.3125,1.21875v41.78125c0,0.33594 0.07031,0.63672 0.1875,0.90625l22.15625,-22zM36.53125,18.59375l-6.34375,6.3125l6.34375,6.28125l7.75,-4.4375c1.10156,-0.63672 1.25781,-1.44531 1.25,-1.875c-0.01172,-0.71094 -0.46094,-1.375 -1.21875,-1.78125c-0.66016,-0.35547 -5.5625,-3.21094 -7.78125,-4.5zM28.78125,26.3125l-21.84375,21.65625c0.36328,-0.01953 0.75781,-0.09766 1.125,-0.3125c0.85547,-0.49609 18.15625,-10.5 18.15625,-10.5l8.53125,-4.90625z"></path>
+										</g>
+									</g>
+								</g>
+							</svg>
+							Download for Android
+						</a>
+					</div>
+
+					<p class="copyright">
+						Copyright © <span class="year">2023</span> by Appie, Inc. All rights
+						reserved.
+					</p>
+
+					<a href="#" class="back-to-top"
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+						</svg>
+					</a>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>
