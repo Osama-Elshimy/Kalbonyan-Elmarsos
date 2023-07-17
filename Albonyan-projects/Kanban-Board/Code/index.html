@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="css/general.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/queries.css" />
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
+
+		<script defer src="script.js"></script>
+
+		<title>Kanban Board</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>Albonyan Board</h1>
+			</header>
+			<main class="main">
+				<section class="section section__not-started">
+					<h2 class="section-title">Not Started</h2>
+					<ul class="task-list" id="test-1"></ul>
+					<button class="btn btn-add-task">+ Add</button>
+				</section>
+				<section class="section section__in-progress">
+					<h2 class="section-title">In Progress</h2>
+					<ul class="task-list" id="test-2"></ul>
+					<button class="btn btn-add-task">+ Add</button>
+				</section>
+				<section class="section section__completed">
+					<h2 class="section-title">Completed</h2>
+					<ul class="task-list" id="test-3"></ul>
+					<button class="btn btn-add-task">+ Add</button>
+				</section>
+			</main>
+
+			<div class="modal hidden" id="add-task-modal">
+				<div class="modal-content">
+					<label for="task-title"></label>
+					<input
+						type="text"
+						id="task-title"
+						name="task-title"
+						required
+						placeholder="Task title" />
+					<div class="modal-buttons">
+						<button class="btn modal-button-add">Add Task</button>
+						<button class="btn modal-button-cancel">Cancel</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="overlay hidden"></div>
+
+			<footer class="footer">
+				Coded by
+				<a
+					href="https://github.com/Osama-Elshimy"
+					target="_blank"
+					alt="A link to Osama Elshimy's GitHub profile"
+					>Osama Elshimy</a
+				>.
+			</footer>
+		</div>
+	</body>
+</html>

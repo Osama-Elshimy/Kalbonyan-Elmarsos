@@ -1,0 +1,94 @@
+/* Above 640px */
+@media (min-width: 40em) {
+	.main {
+		flex-direction: row;
+	}
+
+	.task {
+		max-width: 25rem;
+		min-width: 15rem;
+	}
+
+	.task-description {
+		font-size: 1.6rem;
+	}
+
+	.btn-add-task {
+		min-width: 15rem;
+	}
+}
+
+/* Above 800px */
+@media (min-width: 50em) {
+	.section-title {
+		font-size: 3rem;
+	}
+
+	.task {
+		min-width: 20rem;
+	}
+
+	.task-description {
+		font-size: 1.8rem;
+	}
+
+	.btn-add-task {
+		min-width: 20rem;
+	}
+}
+
+/* Above 912px */
+@media (min-width: 57em) {
+	.main {
+		flex-wrap: nowrap;
+		gap: 6.8rem;
+	}
+
+	.task,
+	.btn-add-task {
+		min-width: 22rem;
+	}
+
+	.task-description {
+		font-size: 1.8rem;
+	}
+}
+
+/* Above 1200px */
+@media (min-width: 75em) {
+	h1 {
+		font-size: 5.2rem;
+	}
+
+	.main {
+		flex-wrap: nowrap;
+		gap: 9.6rem;
+	}
+
+	.section-title {
+		font-size: 3.2rem;
+	}
+
+	.task {
+		min-width: 30rem;
+	}
+
+	.task-description {
+		font-size: 2.4rem;
+	}
+
+	.btn-add-task {
+		min-width: 30rem;
+		font-size: 2rem;
+	}
+
+	.task div {
+		display: flex;
+		gap: 1rem;
+		max-width: max-content;
+	}
+
+	ion-icon {
+		font-size: 2.4rem;
+	}
+}
