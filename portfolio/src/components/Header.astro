@@ -1,0 +1,62 @@
+<header class='header'>
+	<button class='burger-menu'>
+		<div class='burger-menu__bar'></div>
+		<div class='burger-menu__bar'></div>
+		<div class='burger-menu__bar'></div>
+	</button>
+
+	<nav class='navigation'>
+		<ul class='navigation__list'>
+			<li>
+				<a href='#bio' class='navigation__link navigation__bio'>Bio</a>
+			</li>
+			<li>
+				<a href='#skills' class='navigation__link navigation__skills'>Skills</a>
+			</li>
+			<li>
+				<a href='#projects' class='navigation__link navigation__projects'
+					>Projects</a
+				>
+			</li>
+			<li>
+				<a href='#contact' class='navigation__link navigation__contact'
+					>Contact</a
+				>
+			</li>
+		</ul>
+	</nav>
+
+	<div class='toggle'>
+		<h3 class='toggle__title'>Switch Theme</h3>
+		<input
+			type='checkbox'
+			name='toggle checkbox'
+			id='toggle'
+			class='toggle__checkbox'
+		/>
+		<label for='toggle' class='toggle__label'></label>
+	</div>
+</header>
+
+<script>
+	const nav = document.querySelector('.navigation');
+	const navBtn = document.querySelector('.burger-menu');
+	const navBtnBars = document.querySelectorAll('.burger-menu__bar');
+
+	navBtn.addEventListener('click', function (e) {
+		nav.classList.toggle('active');
+		navBtnBars.forEach(bar => {
+			bar.classList.toggle('hidden');
+		});
+	});
+
+	nav.addEventListener('click', function (e) {
+		if (!e.target.classList.contains('navigation__link')) return;
+
+		nav.classList.remove('active');
+
+		navBtnBars.forEach(bar => {
+			bar.classList.remove('hidden');
+		});
+	});
+</script>

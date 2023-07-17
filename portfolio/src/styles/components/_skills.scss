@@ -1,0 +1,169 @@
+@import './mixins';
+
+.skills {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	column-gap: 16rem;
+	background-color: var(--color-grey);
+
+	h2 {
+		grid-column: 1 / -1;
+	}
+}
+
+.skills__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+	gap: 2.4rem;
+}
+
+.skills__item {
+	font-size: var(--font-size-24);
+	font-weight: var(--font-weight-semi-bold);
+	user-select: none;
+	cursor: pointer;
+
+	transition: all var(--transition-timing);
+
+	&:hover {
+		text-shadow: 0 0 20px var(--color-green);
+	}
+
+	&:hover > div {
+		box-shadow: 0 0 40px var(--color-green);
+		background-color: rgb(3, 166, 150, 0.2);
+	}
+
+	div {
+		display: inline-flex;
+		border: 1px solid var(--color-text);
+		border-radius: 100%;
+		padding: 1rem;
+		transition: all var(--transition-timing);
+	}
+
+	span {
+		@include hideElement();
+		position: absolute;
+		transform: translateY(100%);
+
+		z-index: 1;
+		transition: all var(--transition-timing);
+	}
+
+	&:hover span {
+		@include showElement();
+
+		transform: translateY(-150%);
+	}
+
+	&:hover span[data-tech='html'],
+	&:hover span[data-tech='sass'],
+	&:hover span[data-tech='node'] {
+		transform: translate(-5px, -150%);
+	}
+
+	&:hover span[data-tech='js'] {
+		transform: translate(-30px, -150%);
+	}
+
+	&:hover span[data-tech='react'] {
+		transform: translate(-5px, -150%);
+	}
+
+	&:hover span[data-tech='redux'] {
+		transform: translate(-10px, -150%);
+	}
+
+	&:hover span[data-tech='express'] {
+		transform: translate(-15px, -150%);
+	}
+
+	&:hover span[data-tech='mongodb'] {
+		transform: translate(-30px, -150%);
+	}
+}
+
+.certificates {
+	li {
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 2.4rem;
+		isolation: isolate;
+	}
+
+	h3 {
+		font-size: var(--font-size-24);
+		font-weight: var(--font-weight-semi-bold);
+		cursor: pointer;
+		transition: all var(--transition-timing);
+
+		&:hover {
+			text-shadow: 0 0 5px var(--color-green);
+			text-decoration: underline;
+		}
+	}
+
+	.certificate__link--svg:is(:link, :visited) {
+		flex-grow: 0;
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+
+		svg {
+			width: 5rem;
+			fill: var(--color-text);
+			transition: all var(--transition-timing);
+
+			&:hover {
+				scale: 1.2;
+				fill: var(--color-green);
+			}
+		}
+	}
+
+	.certificate__description {
+		@include hideElement();
+		position: absolute;
+		font-size: var(--font-size-20);
+		font-weight: var(--font-weight-medium);
+		color: var(--color-background);
+		background-color: rgba(0, 0, 0, 0.8);
+		padding: 1.8rem;
+		padding-bottom: 3.6rem;
+		border-radius: 1.2rem;
+
+		z-index: -1;
+		transform: translateY(0%);
+		transition: all var(--transition-timing);
+	}
+
+	.certificate__link--text:hover ~ .certificate__description {
+		@include showElement();
+		transform: translateY(-12rem);
+	}
+
+	li[data-skill='programming-foundations'],
+	li[data-skill='html-css'],
+	li[data-skill='git'],
+	li[data-skill='sass'],
+	li[data-skill='node'] {
+		.certificate__link--text:hover ~ .certificate__description {
+			transform: translateY(-50%);
+		}
+	}
+
+	li[data-skill='javascript'],
+	li[data-skill='react'] {
+		.certificate__link--text:hover ~ .certificate__description {
+			transform: translateY(-60%);
+		}
+	}
+
+	li:not(:last-of-type) {
+		margin-bottom: 1.8rem;
+	}
+}

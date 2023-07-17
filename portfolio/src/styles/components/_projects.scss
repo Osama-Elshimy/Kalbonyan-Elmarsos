@@ -1,0 +1,224 @@
+@import './mixins';
+
+img,
+svg {
+	max-width: 100%;
+}
+
+.projects {
+	grid-template-columns: 1fr;
+
+	h3 {
+		grid-column: 1 / -1;
+		margin-inline: auto;
+		user-select: none;
+		transition: all var(--transition-timing);
+
+		&:hover {
+			text-shadow: 0 0 5px var(--color-green);
+		}
+	}
+}
+
+.accordion {
+	--_button-size: 3rem;
+	--_panel-padding: 0.75rem;
+	--_panel-gap: 1rem;
+
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+
+	width: 85vw;
+	margin-inline: auto;
+	margin-bottom: 4.8rem;
+
+	contain: content;
+	/* added padding to prevent issue with outlines */
+	padding: 0.5rem;
+}
+
+@media (min-width: 50em) {
+	.accordion {
+		flex-direction: row;
+		gap: 1.2rem;
+		height: 40rem;
+		width: 85vw;
+	}
+}
+
+.accordion-panel {
+	position: relative;
+	isolation: isolate;
+	flex-basis: calc((var(--_panel-padding) * 2) + var(--_button-size));
+	overflow: hidden;
+	padding: var(--_panel-padding);
+	padding-right: calc(var(--_panel-padding) * 4);
+	border-radius: calc(((var(--_panel-padding) * 2) + var(--_button-size)) / 2);
+	cursor: pointer;
+
+	&:nth-of-type(odd) {
+		--_panel-color: hsl(160, 70%, 50%);
+	}
+
+	&:nth-of-type(even) {
+		--_panel-color: hsl(184, 70%, 50%);
+	}
+
+	&:has([aria-expanded='true']) {
+		flex-basis: clamp(10rem, 30vh, 15rem);
+		flex-grow: 1;
+	}
+
+	&:focus-within {
+		outline: 3px solid var(--_panel-color);
+		outline-offset: 4px;
+	}
+
+	&:has([aria-expanded='true']):hover .accordion-title {
+		@include showElement();
+	}
+
+	&:has([aria-expanded='true']):hover .accordion-image {
+		filter: brightness(0.3);
+	}
+
+	&:has([aria-expanded='true']):hover p {
+		@include showElement();
+	}
+
+	&:has([aria-expanded='true']):hover a {
+		@include showElement();
+	}
+
+	.accordion-title {
+		@include hideElement();
+
+		color: var(--color-white);
+		font-size: var(--font-size-24);
+		font-weight: var(--font-weight-bold);
+
+		position: relative;
+		isolation: isolate;
+
+		display: grid;
+		align-items: center;
+	}
+
+	.accordion-trigger {
+		display: flex;
+		align-items: center;
+		gap: var(--_panel-gap);
+		flex-direction: row-reverse;
+		background: transparent;
+		border: 0;
+		padding: 0;
+		outline: 0;
+	}
+}
+
+@media (max-width: 50em) {
+	.accordion-panel:has([aria-expanded='true']) {
+		flex-basis: 45rem;
+	}
+}
+
+@media (min-width: 85em) {
+	.accordion-panel:has([aria-expanded='true']) {
+		max-width: 70rem;
+	}
+}
+
+.accordion-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	p {
+		@include hideElement();
+		color: var(--color-white);
+		font-size: var(--font-size-22);
+
+		transition: all var(--transition-timing);
+	}
+
+	.accordion-links {
+		margin-top: 13rem;
+		display: flex;
+		gap: 1.2rem;
+	}
+
+	a:is(:link, :visited) {
+		@include hideElement();
+
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+
+		color: var(--color-white);
+		font-size: var(--font-size-20);
+
+		transition: all var(--transition-timing);
+	}
+
+	a:is(:hover, :active) {
+		color: var(--color-green);
+	}
+
+	.github-link > svg path {
+		transition: all var(--transition-timing);
+	}
+
+	.github-link:hover > svg path {
+		fill: var(--color-green);
+	}
+}
+
+.accordion-image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+
+	transition: all 500ms;
+	cursor: pointer;
+}
+
+.accordion-icon {
+	fill: var(--_panel-color);
+	background: hsl(0 0% 0% / 0.55);
+	width: var(--_button-size);
+	aspect-ratio: 1 / 1;
+	padding: 0.75rem;
+	border-radius: 50%;
+	z-index: 10;
+}
+
+@media (max-width: 45em) {
+	.accordion-title::after {
+		content: '';
+		position: absolute;
+		left: calc((var(--_panel-gap) + var(--_button-size)) * -1);
+		width: calc(100% + (var(--_button-size) * 2));
+		height: var(--_button-size);
+		background: hsl(0 0% 0% / 0.5);
+		z-index: -1;
+		border-radius: 100vw;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.accordion-panel {
+		transition: all 500ms, flex-grow 500ms;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.accordion-panel:has([aria-expanded='true']) p {
+		transition: transform 400ms 400ms, opacity 400ms 400ms;
+	}
+}

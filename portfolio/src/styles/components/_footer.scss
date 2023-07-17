@@ -1,0 +1,28 @@
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.8rem;
+	font-size: var(--font-size-15);
+	border-top: 0.1rem solid var(--color-text);
+
+	@keyframes jump {
+		0% {
+			transform: translateY(0.5rem);
+		}
+		35% {
+			transform: translateY(-0.5rem);
+		}
+		70% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	a {
+		font-size: 4rem;
+		animation: jump 1s infinite ease-in-out alternate;
+	}
+}

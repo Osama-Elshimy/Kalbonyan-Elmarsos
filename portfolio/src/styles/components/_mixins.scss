@@ -1,0 +1,17 @@
+@mixin twoColumns($column-gap, $row-gap) {
+	column-gap: $column-gap;
+	row-gap: $row-gap;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin hideElement() {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+@mixin showElement() {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}

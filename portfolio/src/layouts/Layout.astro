@@ -1,0 +1,108 @@
+---
+import '../styles/style.scss';
+
+import Footer from '../components/Footer.astro';
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+
+		<meta
+			name='description'
+			content="Welcome to my portfolio! I'm a skilled full stack MERN (MongoDB, Express.js, React, Node.js) developer. I specialize in building robust and scalable web applications. With my strong understanding of both front-end and back-end technologies, I can create dynamic and responsive solutions. Explore my portfolio to see my work and learn more about how I can help bring your projects to life."
+		/>
+
+		<meta name='author' content='Osama Elshimy' />
+
+		<meta
+			name='keywords'
+			content='full stack MERN developer, web development, MongoDB, Express.js, React, Node.js, front-end, back-end, responsive design, database, JavaScript'
+		/>
+
+		<link rel='preconnect' href='https://fonts.googleapis.com' />
+		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+		<link
+			href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap'
+			rel='stylesheet'
+		/>
+
+		<!-- Favicons -->
+		<link rel='icon' type='image/x-icon' href='/favicon.svg' />
+
+		<link
+			rel='icon'
+			type='image/png'
+			sizes='192x192'
+			href='/favicons/android-chrome-192x192.png'
+		/>
+		<link
+			rel='icon'
+			type='image/png'
+			sizes='512x512'
+			href='/favicons/android-chrome-512x512.png'
+		/>
+
+		<link
+			rel='apple-touch-icon'
+			sizes='180x180'
+			href='/favicons/apple-touch-icon.png'
+		/>
+		<link
+			rel='icon'
+			type='image/png'
+			sizes='32x32'
+			href='/favicons/favicon-32x32.png'
+		/>
+		<link
+			rel='icon'
+			type='image/png'
+			sizes='16x16'
+			href='/favicons/favicon-16x16.png'
+		/>
+		<link rel='manifest' href='/favicons/site.webmanifest' />
+
+		<title>{title}</title>
+	</head>
+	<body>
+		<main class='container'>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<script>
+	const htmlElement = document.documentElement;
+	const toggleCheckbox = document.querySelector('.toggle__checkbox');
+	const localStorageKey = 'themePreference';
+
+	// Check if the user preference exists in local storage
+	const storedPreference = localStorage.getItem(localStorageKey);
+	if (storedPreference) {
+		htmlElement.classList.add(storedPreference);
+		toggleCheckbox.classList.add('checked');
+	} else {
+		htmlElement.classList.remove('has-toggle-checked');
+		toggleCheckbox.classList.remove('checked');
+	}
+
+	toggleCheckbox.addEventListener('click', function (e) {
+		htmlElement.classList.toggle('has-toggle-checked');
+		toggleCheckbox.classList.toggle('checked');
+
+		// Update the user preference in local storage
+		const isToggleChecked =
+			htmlElement.classList.contains('has-toggle-checked');
+		const preferenceValue = isToggleChecked ? 'has-toggle-checked' : '';
+		localStorage.setItem(localStorageKey, preferenceValue);
+	});
+</script>

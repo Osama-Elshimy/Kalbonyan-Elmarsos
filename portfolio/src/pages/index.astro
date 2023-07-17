@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Header from '../components/Header.astro';
+import Bio from '../components/Bio.astro';
+import Skills from '../components/Skills.astro';
+import Projects from '../components/Projects/Projects.astro';
+import Contact from '../components/Contact.astro';
+---
+
+<Layout title='Osama Elshimy'>
+	<video class='video-loop' autoplay loop muted>
+		<source src='/video-loop.mp4' type='video/mp4' />
+	</video>
+	<Header />
+	<Bio />
+	<Skills />
+	<Projects />
+	<Contact />
+</Layout>
