@@ -1,0 +1,124 @@
+.hero {
+	background-image: url('/assets/cars/desktop__hero-background.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-inline: 6.4rem;
+	padding-block: 0 28rem;
+}
+
+.hero__text-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 4.8rem;
+
+	width: 50%;
+	margin-left: auto;
+}
+
+.hero__text-box * {
+	font-weight: 700;
+}
+
+.hero__title,
+.hero__subtitle {
+	text-align: end;
+}
+
+.hero__title {
+	font-size: 6.4rem;
+}
+
+.hero__subtitle {
+	font-size: 3.2rem;
+	max-width: 60%;
+}
+
+.hero__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+
+	padding: 0.5rem 5rem;
+	border-color: #fff;
+	border-radius: 10px;
+	font-weight: 700;
+	transition: all 0.3s;
+}
+
+.hero__button:hover {
+	color: #741906;
+	background: #dfdfdf;
+}
+
+.hero__button svg path {
+	transition: all 0.3s;
+}
+
+.hero__button:hover svg path {
+	stroke: #741906;
+}
+
+.hero__button p {
+	font-size: 2.4rem;
+}
+
+/* MEDIA QUERIES */
+
+/* BELOW 864px */
+@media (max-width: 54em) {
+	.hero__text-box {
+		width: 60%;
+	}
+
+	.hero__subtitle {
+		font-size: 3.6rem;
+		max-width: 70%;
+	}
+}
+
+/* BELOW 704px */
+@media (max-width: 44em) {
+	.hero__text-box {
+		width: 100%;
+		align-items: center;
+	}
+
+	.hero__title {
+		text-align: center;
+	}
+
+	.hero__subtitle {
+		max-width: 100%;
+		font-size: 4rem;
+		text-align: center;
+		background-color: #0e0c0b75;
+		padding: 1.2rem 2.4rem;
+	}
+}
+
+/* BELOW 528px */
+@media (max-width: 33em) {
+	.hero {
+		padding-inline: 3.2rem;
+		padding-bottom: 6.4rem;
+	}
+
+	.hero__text-box {
+		gap: 8rem;
+	}
+
+	.hero__title {
+		font-size: 4.8rem;
+	}
+
+	.hero__subtitle {
+		font-size: 3rem;
+	}
+
+	.hero__button {
+		margin-top: 13rem;
+	}
+}

@@ -1,0 +1,144 @@
+.about {
+	padding-inline: 9.6rem;
+	padding-block: 8rem 20rem;
+
+	display: grid;
+	grid-template-columns: 4fr 3fr;
+	column-gap: 4.8rem;
+}
+
+.about__text-box {
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+	font-weight: 700;
+	margin-top: 9.6rem;
+	width: 90%;
+}
+
+.about__title {
+	position: relative;
+	color: #741906;
+	font-size: 5.6rem;
+	margin-bottom: 3.6rem;
+}
+
+.about__title::before {
+	content: 'ABOUT US';
+	position: absolute;
+	bottom: 2.1rem;
+	left: -1.9rem;
+	color: #ebebeb;
+	font-size: 10rem;
+	z-index: -1;
+}
+
+.about__text-box p {
+	color: #232730;
+	font-family: 'Nunito Sans';
+	font-size: 2rem;
+	line-height: 2.4rem;
+	font-weight: 400;
+}
+
+.about__image-box {
+	width: 80%;
+	background: url('/assets/cars/about__background.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.about__image-box img {
+	transform: translate(15%, 13%);
+}
+
+/* MEDIA QUERIES */
+
+/* BELOW 1200px */
+@media (max-width: 75em) {
+	.about__text-box p {
+		font-size: 2.4rem;
+		line-height: 3rem;
+	}
+}
+
+/* BELOW 864px */
+@media (max-width: 54em) {
+	.about__text-box p {
+		font-size: 3rem;
+	}
+
+	.about__image-box {
+		width: 90%;
+	}
+
+	.about__image-box img {
+		transform: translate(15%, 30%);
+	}
+}
+
+/* BELOW 784px */
+@media (max-width: 49em) {
+	.about {
+		grid-template-columns: 1fr;
+	}
+
+	.about__image-box {
+		display: none;
+	}
+
+	.about__title {
+		text-align: center;
+	}
+
+	.about__title::before {
+		text-align: center;
+		font-size: 12rem;
+		left: 13rem;
+		bottom: 2rem;
+	}
+
+	.about__text-box p {
+		line-height: 4rem;
+	}
+}
+
+/* BELOW 704px */
+@media (max-width: 44em) {
+	.about {
+		grid-template-columns: 1fr;
+	}
+
+	.about__image-box {
+		display: none;
+	}
+
+	.about__title {
+		text-align: center;
+	}
+
+	.about__title::before {
+		text-align: center;
+		font-size: 12rem;
+		left: 7rem;
+	}
+
+	.about__text-box p {
+		line-height: 4rem;
+	}
+}
+
+/* BELOW 528px */
+@media (max-width: 33em) {
+	.about {
+		padding-inline: 4.8rem;
+	}
+
+	.about__text-box {
+		width: 100%;
+	}
+
+	.about__title::before {
+		font-size: 9rem;
+	}
+}
