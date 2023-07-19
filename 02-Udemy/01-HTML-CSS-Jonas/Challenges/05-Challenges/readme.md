@@ -1,1 +1,3 @@
-![CONVERSE CHUCK TAYLOR WITH LAYOUT](https://user-images.githubusercontent.com/90342783/178938089-6b177b81-9877-4665-80cf-68c30846c28a.png)
+![Demo](./demo.png)
+
+## [Next Challenge](../06-Challenges/)
