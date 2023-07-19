@@ -1,0 +1,45 @@
+:root {
+	--clr-pink: #d375b9;
+	--clr-pink-light: rgb(215, 193, 197);
+	--clr-white: #fff;
+	--clr-purple: #241229;
+
+	--color-bg-dark: #25273d;
+
+	--clr-grey-dark: #697386;
+	--clr-grey-regular: #7c8495;
+	--clr-grey-light: #c8cbe7;
+
+	--clr-todo: #494c6b;
+
+	--clr-ingredient-pink: linear-gradient(
+		180deg,
+		#db9dc1 0%,
+		#db9ec1 45.31%,
+		#c7b6d5 81.25%,
+		#d477b8 100%
+	);
+
+	--red-light: #f8d7da;
+	--red-dark: #842029;
+	--green-light: #d1e7dd;
+	--green-dark: #0f5132;
+	--borderRadius: 0.25rem;
+	--letterSpacing: 1px;
+
+	--clr-text-primary: var(--clr-pink);
+	--clr-text-second: var(--clr-white);
+	--clr-bg-card: var(--clr-white);
+	--clr-ingredient: var(--clr-ingredient-pink);
+	--clr-background: var(--clr-pink-light);
+	--clr-bg-shared: var(--clr-white);
+
+	--font-weight-400: 400;
+	--font-weight-500: 500;
+	--font-weight-600: 600;
+	--font-weight-700: 700;
+
+	--transition-time: 0.3s;
+
+	--flex-direction: 'row';
+}

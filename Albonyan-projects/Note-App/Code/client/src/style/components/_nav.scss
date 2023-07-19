@@ -1,0 +1,60 @@
+@use '../abstracts' as *;
+
+.nav {
+	position: relative;
+	@include flexLayout(center, space-between);
+	color: var(--clr-pink);
+	padding-block: 1.2rem;
+	padding-inline: 2.4rem;
+	background-color: var(--clr-bg-shared);
+	box-shadow: 0 0 0 100vmax var(--clr-bg-shared);
+	clip-path: inset(0 -100vmax);
+}
+
+.nav__logo {
+	@include flexLayout();
+	gap: 1.2rem;
+
+	p {
+		font-size: 3.2rem;
+	}
+}
+
+.nav__buttons {
+	button {
+		font-size: 3.2rem;
+		font-weight: var(--font-weight-500);
+	}
+
+	button:not(:first-of-type) {
+		margin-inline-start: 3rem;
+	}
+}
+
+.nav__modal {
+	padding-inline: 1.2rem;
+	padding-block: 3.6rem 2.4rem;
+	border-radius: 15px;
+	position: absolute;
+	background-color: var(--clr-bg-shared);
+	right: 2rem;
+	top: 9rem;
+	z-index: 999;
+
+	box-shadow: 0px 4px 4px 0px #0000001a;
+
+	h3 {
+		font-size: 2rem;
+		text-align: center;
+		margin-block-end: 3.6rem;
+	}
+
+	button {
+		padding: 0.3rem 3rem;
+		width: 100%;
+
+		&:not(:last-of-type) {
+			margin-block-end: 2.4rem;
+		}
+	}
+}

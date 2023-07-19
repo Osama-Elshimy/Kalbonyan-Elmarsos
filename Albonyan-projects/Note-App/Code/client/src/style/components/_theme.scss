@@ -1,0 +1,14 @@
+html.dark {
+	--clr-bg-shared: var(--clr-purple);
+	--clr-bg-card: var(--color-bg-dark);
+
+	input {
+		color: #fff;
+
+		&::placeholder {
+			color: #fff;
+		}
+	}
+
+	--clr-todo: var(--clr-white);
+}

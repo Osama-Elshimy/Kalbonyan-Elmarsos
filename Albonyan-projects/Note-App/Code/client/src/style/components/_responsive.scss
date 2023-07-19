@@ -1,0 +1,111 @@
+@media (max-width: 1000px) {
+	.register {
+		width: 90%;
+
+		h1 {
+			font-size: 4.8rem;
+		}
+
+		h2 {
+			font-size: 3.6rem;
+		}
+
+		.register__form {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.register {
+		display: block;
+		width: min(100%, 45rem);
+		margin-block: 8rem;
+	}
+
+	.register__form {
+		margin-inline: auto;
+	}
+}
+
+@media (max-width: 700px) {
+	html {
+		font-size: 56.25%;
+	}
+	.card {
+		width: 90%;
+	}
+
+	.card-big {
+		& > * {
+			width: 95%;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	html {
+		font-size: 50%;
+	}
+
+	.register {
+		.form {
+			width: 100%;
+			margin-inline: auto;
+
+			& > * {
+				width: 100%;
+			}
+		}
+	}
+
+	.nav {
+		justify-content: space-around;
+	}
+
+	.nav__logo {
+		p {
+			font-size: 3rem;
+		}
+	}
+
+	.note-form {
+		.btn {
+			width: 70%;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.register {
+		width: 90%;
+	}
+
+	.card {
+		width: 80%;
+	}
+
+	.card-big {
+		& > * > * {
+			width: 100%;
+		}
+	}
+
+	.nav__logo {
+		svg {
+			width: 3rem;
+		}
+	}
+
+	.nav__buttons {
+		display: flex;
+		justify-content: center;
+		button {
+			font-size: 20px;
+		}
+
+		svg {
+			width: 3rem;
+		}
+	}
+}

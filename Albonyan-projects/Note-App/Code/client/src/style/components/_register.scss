@@ -1,0 +1,104 @@
+@use '../abstracts' as *;
+
+.register {
+	@include gridLayout();
+	max-width: 90rem;
+	margin-inline: auto;
+	margin-top: 4.8rem;
+	& > * {
+		padding: 3.6rem;
+		min-height: 60vh;
+	}
+}
+
+.register__logo {
+	position: relative;
+	@include flexLayout();
+	flex-direction: column;
+	background-image: var(--clr-ingredient);
+
+	h1 {
+		color: var(--clr-text-second);
+		font-size: 6.4rem;
+	}
+
+	svg {
+		margin-bottom: 2.4rem;
+		path {
+			fill: var(--clr-text-second);
+		}
+	}
+}
+
+.register__form {
+	background-color: var(--clr-bg-shared);
+
+	p {
+		color: var(--clr-grey-dark);
+		font-weight: var(--font-weight-700);
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.btn-switch {
+		display: block;
+		margin-inline: auto;
+		text-align: center;
+		font-weight: var(--font-weight-700);
+		font-size: 2rem;
+		transition: var(--transition-time);
+
+		&:hover {
+			scale: 1.2;
+		}
+	}
+}
+
+.form {
+	@include flexLayout();
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 2rem;
+
+	h2 {
+		font-size: 4.8rem;
+		text-align: center;
+	}
+
+	.form__btn {
+		@include flexLayout();
+		gap: 1.2rem;
+		width: 40rem;
+	}
+}
+
+.form__row {
+	input {
+		font-size: 2rem;
+		border: 2px solid rgba(60, 66, 87, 0.122);
+		border-radius: 8px;
+		width: 40rem;
+		max-width: 100%;
+		padding: 0.5rem 1rem;
+		color: var(--clr-todo);
+	}
+
+	label {
+		font-weight: var(--font-weight-700);
+	}
+
+	input,
+	label {
+		color: var(--clr-grey-regular);
+		background-color: var(--clr-ingredient);
+	}
+}
+
+.btn-lang {
+	position: absolute;
+	color: var(--clr-bg-card);
+	bottom: 1rem;
+	left: 2rem;
+	font-size: 3.2rem;
+	font-weight: var(--font-weight-500);
+}

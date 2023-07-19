@@ -1,0 +1,78 @@
+@use '../abstracts/' as *;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: var(--font-weight-400);
+	color: var(--clr-text-primary);
+}
+
+.wrapper {
+	margin-inline: auto;
+	max-width: 120rem;
+	isolation: isolate;
+	margin-block-end: 3.6rem;
+}
+
+.alert {
+	padding: 0.375rem 0.75rem;
+	margin-bottom: 1rem;
+	border-color: transparent;
+	border-radius: var(--borderRadius);
+	text-align: center;
+	letter-spacing: var(--letterSpacing);
+}
+
+.alert-danger {
+	color: var(--red-dark);
+	background-color: var(--red-light);
+}
+.alert-success {
+	color: var(--green-dark);
+	background-color: var(--green-light);
+}
+
+.btn {
+	font-weight: var(--font-weight-700);
+	font-size: 2rem;
+}
+
+.btn-block {
+	display: block;
+	max-width: 100%;
+	padding: 0.8rem 2.4rem;
+	border-radius: 6px;
+	background-color: var(--clr-grey-regular);
+	color: var(--clr-text-second);
+	transition: var(--transition-time);
+
+	&:hover {
+		scale: 1.1;
+	}
+}
+
+button[type='submit'] {
+	background-color: var(--clr-text-primary);
+	color: var(--clr-text-second);
+}
+
+html[lang='ar'] {
+	.nav__modal {
+		left: 2rem;
+		right: auto;
+	}
+
+	.form__btn[type='submit'] {
+		flex-direction: row-reverse;
+	}
+
+	.btn-lang {
+		left: auto;
+		right: 2rem;
+	}
+}
