@@ -1,5 +1,9 @@
 # Kanban Board
 
-[Demo](https://albonyan-board.netlify.app/)
+## [Code](./Code/)
 
-[Code](./Code/)
+## [Demo](https://albonyan-board.netlify.app/)
+
+---
+
+## [Next Project](../Car-Agency/)

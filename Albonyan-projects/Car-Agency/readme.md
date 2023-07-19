@@ -1,5 +1,9 @@
 # Car Agency
 
-[Demo](https://yourcar-project.netlify.app/)
+## [Code](./Code/)
 
-[Code](./Code/)
+## [Demo](https://yourcar-project.netlify.app/)
+
+---
+
+## [Next Project](../Note-App/)

@@ -1,5 +1,9 @@
 # Appie
 
-[Demo](https://appie-project.netlify.app/)
+## [Code](./Code/)
 
-[Code](./Code/)
+## [Demo](https://appie-project.netlify.app/)
+
+---
+
+## [Next Project](../Kanban-Board/)
