@@ -24,6 +24,8 @@
 
 #### [Finished Live Demo](https://node-shop-whzv.onrender.com/)
 
+![Demo](./Projects/01-Shop/node-shop.png)
+
 ### Social Feed (S25 - S28)
 
 #### Project Code
@@ -34,12 +36,14 @@
 
 #### [Finished Live Demo](https://social-feed-3zdv.onrender.com/)
 
+![Demo](./Projects/02-Social-Feed/social-feed.png)
+
 ---
 
 ## Code
 
-[code](Code)
-[assignments](Code/Assignments/)
+[Code](Code)
+[Assignments](Code/Assignments/)
 
 ---
 
@@ -47,3 +51,7 @@
 
 ![Certificate](./node-js-complete-guide.jpg)
 <br>
+
+---
+
+## [Next Course](/02-Udemy/06-MERN-Jobify/)
