@@ -32,3 +32,7 @@
 [Course-Link](https://www.udemy.com/course/web-projects-with-vanilla-javascript/)<br>
 
 ![Certificate](vanilla-projects-certificate.png)
+
+---
+
+## [Next Course](/02-Udemy/04-Reactjs-Maximilian/)
