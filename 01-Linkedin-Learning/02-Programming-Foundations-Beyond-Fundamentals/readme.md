@@ -8,3 +8,9 @@
 
 [Course Link](https://www.linkedin.com/learning/programming-foundations-beyond-the-fundamentals/?resume=false)
 <br>[Preview Certificate](https://www.linkedin.com/learning/certificates/3f647c7de44fe6fc1cf5b14700b4e8f5e4c2c4c905e05eebfd8c60a708431a94)
+
+![Certificate](./certificate.png)
+
+---
+
+## [Next Course](/02-Udemy/01-HTML-CSS-Jonas/)

@@ -22,3 +22,9 @@
 
 <br>[Course Link](https://www.linkedin.com/learning/programming-foundations-fundamentals-3/)
 <br>[Preview Certificate](https://www.linkedin.com/learning/certificates/4e1d65cd49bf3b33f14efa351e98c5f7d8dcd7084d402229c487196cc5846241)
+
+![Certificate](./certificate.png)
+
+---
+
+## [Next Course](../02-Programming-Foundations-Beyond-Fundamentals/)
